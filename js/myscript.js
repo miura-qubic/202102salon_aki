@@ -18,9 +18,19 @@ const tabletwidth = 1025;
 
 $(function () {
 
+	// ヘッダー
+	$(window).scroll(function(){
+		if($(window).scrollTop() > 500){
+			$('.header_in').addClass('active');
+		}else{
+			$('.header_in').removeClass('active');
+		}
+	});
 
-
-
+	// アニメーション発動
+	$('.underline').on('inview',function(){
+		$(this).addClass('active');
+	});
 
 
 	// 一番最後に記述
