@@ -1,0 +1,133 @@
+/*///////////////////////////////////////////////////
+//
+//            ▼ 共通 ▼
+//
+///////////////////////////////////////////////////*/
+main{
+	margin-top: 6rem;
+}
+/*///////////////////////////////////////////////////
+//
+//            ▼ ナビ ▼
+//
+///////////////////////////////////////////////////*/
+header .header_in{
+  height: 6rem;
+  padding: 0 0 0 2rem;
+}
+header .logo{
+  width: 8.5rem;
+  min-width: unset;
+  max-width: unset;
+}
+header nav{
+  position: fixed;
+  top: 6rem;
+  right: -50%;
+  width: 50%;
+  height: 100%;
+  background: rgba(255,255,255,.95);
+  z-index: 50001;
+  transition: 1s;
+}
+header nav.active{
+  right: 0;
+}
+header nav ul{
+  display: block;
+}
+header nav ul li a{
+  font-size: 1rem;
+}
+
+header .sns_wrap{
+  margin-left: auto;
+  margin-right: 1.5rem;
+}
+header .sns_wrap a{
+  height: 6rem;
+	padding: 0 1rem;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header .sns_wrap a span{
+	font-size: 2rem;
+	line-height: 1;
+}
+
+.menu_open{
+  width: 4rem;
+  height: 6rem;
+  position: relative;
+}
+.menu_open span{
+	position: absolute;
+	top:50%;
+	left:50%;
+	background: var(--brown);
+	width: 40%;
+	height: 2px;
+	transition: .3s;
+}
+.menu_open span:nth-of-type(1){transform:translate(-50%,-50%) translateY(6px);}
+.menu_open span:nth-of-type(2){transform:translate(-50%,-50%);}
+.menu_open span:nth-of-type(3){transform:translate(-50%,-50%) translateY(-6px);}
+.menu_open.active span:nth-of-type(1){transform:translate(-50%,-50%) rotate(45deg);}
+.menu_open.active span:nth-of-type(2){opacity: 0;}
+.menu_open.active span:nth-of-type(3){transform:translate(-50%,-50%) rotate(-45deg);}
+/*///////////////////////////////////////////////////
+//
+//            ▼ トップ03 ▼
+//
+///////////////////////////////////////////////////*/
+.top03 .box article a .txt{
+	padding-left: 1rem;
+}
+.top03 .box article a .txt .inner{
+	margin-top: 1.5rem;
+}
+/*///////////////////////////////////////////////////
+//
+//            ▼ トップ04 ▼
+//
+///////////////////////////////////////////////////*/
+.top04 .box_in h4{
+  font-size: 2.4rem;
+}
+/*///////////////////////////////////////////////////
+//
+//            ▼ トップ06 ▼
+//
+///////////////////////////////////////////////////*/
+.top06 .item_in .txt h4{
+	font-size: 1.5rem;
+	margin-bottom: 1.5rem;
+}
+.top06 .item_in .txt p{
+	font-size: 1rem;
+	line-height: 2.2;
+}
+.top06 .item_in .txt .btn_wrap{
+	margin: 2rem 0 0;
+}
+/*///////////////////////////////////////////////////
+//
+//            ▼ トップ07 ▼
+//
+///////////////////////////////////////////////////*/
+.top07 .box article a .img{
+	width: 38%;
+}
+.top07 .box article a .txt{
+  width: 62%;
+	padding: 0 1.5rem 0 1rem;
+}
+.top07 .box article a .txt h4{
+	font-size: 1rem;
+	margin-bottom: 0.5rem;
+}
+.top07 .box article a .txt time{
+	margin-top: 0.5rem;
+}
