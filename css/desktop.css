@@ -9,11 +9,11 @@
 //            ▼ ベース設定 ▼
 //
 ///////////////////////////////////////////////////*/
-@font-face {
+/* @font-face {
 	font-family: "myfont";
 	src: url(../fonts/.woff) format("woff"),
 				url(../fonts/.otf) format("otf");
-}
+} */
 
 
 
@@ -27,7 +27,7 @@ html{
 	line-height: 2;
 }
 a{
-	color:#111 ;
+	color: #111;
 	display: block;
 }
 #wrapper{
@@ -234,6 +234,47 @@ main{
 	writing-mode: vertical-rl;
 	text-orientation: upright;
 }
+
+.fadein{
+	opacity: 0;
+	transform: translateY(50px);
+}
+.fadein.active{
+	opacity: 1;
+	transform: translateY(0);
+}
+.fade01.active{
+	transition: 1s;
+}
+.fade02.active{
+	transition: 1s .3s;
+}
+.fade_side_r{
+	opacity: 0;
+	transform: translateX(50px);
+}
+.fade_side_l{
+	opacity: 0;
+	transform: translateX(-50px);
+}
+.fade_side_r.active,
+.fade_side_l.active{
+	opacity: 1;
+	transform: translateY(0);
+}
+.fade_side01.active{
+	transition: 1s .5s;
+}
+.fade_side02.active{
+	transition: 1s 1s;
+}
+.txt_show{
+	opacity: 0;
+}
+.txt_show.active{
+	opacity: 1;
+	transition: opacity 1.3s cubic-bezier(.79,.01,.21,.96);
+}
 /*///////////////////////////////////////////////////
 //
 //            ▼ ナビ ▼
@@ -245,7 +286,7 @@ header{
 	left: 0;
 	width: 100%;
 	height: auto;
-	z-index: 50000;
+	z-index: 50001;
 }
 header .header_in{
 	display: flex;
@@ -396,7 +437,7 @@ footer .copyright p{
 .top01 .mv{
 	position: relative;
 	width: 100%;
-	background: url(../images/top/mv.png) center center / cover no-repeat;
+	background: url(../images/top/mv.jpg) center center / cover no-repeat;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -443,7 +484,7 @@ footer .copyright p{
 	height: 2.25rem;
 	background: #849989;
 	z-index: -1;
-	transition: 1s cubic-bezier(.79,.01,.21,.96);
+	transition: 1s cubic-bezier(.79,.01,.21,.96) .8s;
 }
 .top01 .mv .txt p .underline.active::before{
 	width: 104%;
@@ -609,6 +650,8 @@ footer .copyright p{
 }
 .top04 .box_in{
 	display: flex;
+	max-width: 1180px;
+	margin: 0 auto;
 }
 .top04 .box_in h4{
 	font-size: 2.8rem;
@@ -756,7 +799,6 @@ footer .copyright p{
 .top06 .item{
 	display: flex;
 	flex-direction: column;
-	align-items: flex-start;
 	justify-content: flex-start;
 	margin-top: 8rem;
 }
@@ -785,6 +827,10 @@ footer .copyright p{
 .top06 .item:nth-of-type(even) .img{
 	order: 2;
 	margin-right: -15%;
+}
+.top06 .item .img img{
+	width: 100%;
+	height: auto;
 }
 .top06 .item .txt{
 	width: 45%;
@@ -992,14 +1038,14 @@ footer .copyright p{
 	max-width: 20rem;
 	font-size: 1rem;
 }
-.btn a .angle{
+.contact_wrap .box .txt .btn_wrap .btn a .angle{
 	right: 1.25rem;
 	font-size: 1.5rem;
 }
-.btn a:hover .angle{
+.contact_wrap .box .txt .btn_wrap .btn a:hover .angle{
 	right: 0.5rem;
 }
-.btn.line a .icon{
+.contact_wrap .box .txt .btn_wrap .btn.line a .icon{
 	font-size: 2rem;
 }
 /*///////////////////////////////////////////////////

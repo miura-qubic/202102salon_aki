@@ -40,8 +40,11 @@ $(function () {
 	});
 
 	// アニメーション発動
-	$('.underline').on('inview',function(){
+	$('.underline, .fadein, .txt_show, .fade_side_r, .fade_side_l').on('inview',function(){
 		$(this).addClass('active');
+	});
+	$('.txt_anime').on('inview',function(){
+		$(this).addClass('start');
 	});
 
 

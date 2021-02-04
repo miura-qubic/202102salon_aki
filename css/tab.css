@@ -7,18 +7,18 @@ main{
 	margin-top: 6rem;
 }
 #overlay{
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0,0,0,.9);
-  opacity: 0;
-  transition: .7s;
-  z-index: 49999;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,.9);
+	opacity: 0;
+	transition: .7s;
+	z-index: 49999;
 }
 #overlay.active{
-  opacity: 1;
+	opacity: 1;
 }
 .ttl_wrap{
 	margin-bottom: 2rem;
@@ -48,48 +48,54 @@ main{
 //
 ///////////////////////////////////////////////////*/
 header .header_in{
-  height: 6rem;
-  padding: 0 0 0 2rem;
+	height: 6rem;
+	padding: 0 0 0 2rem;
 }
 header .logo{
-  width: 8.5rem;
-  min-width: unset;
-  max-width: unset;
+	width: 8.5rem;
+	min-width: unset;
+	max-width: unset;
 }
 header nav{
-  position: fixed;
-  top: 6rem;
-  right: -50%;
-  width: 50%;
-  height: 100%;
-  background: rgba(255,255,255,.95);
-  padding: 3rem 0;
-  z-index: 50001;
-  transition: .7s;
+	position: fixed;
+	top: 6rem;
+	right: -50%;
+	width: 50%;
+	height: 100%;
+	background: rgba(255,255,255,.95);
+	padding: 0 0 3rem;
+	z-index: 50001;
+	transition: .7s;
 }
 header nav.active{
-  right: 0;
+	right: 0;
 }
 header nav ul{
-  display: block;
+	display: block;
+}
+header nav ul li{
+	border-bottom: solid 1px #CCCACC;
+}
+header nav ul li:first-of-type{
+	border-top: solid 1px #CCCACC;
 }
 header nav ul li a{
-  font-size: 1.1rem;
-  height: auto;
-  padding: 1.5rem 2.5rem;
+	font-size: 1.1rem;
+	height: auto;
+	padding: 1.5rem 2.5rem;
 }
 
 header .sns_wrap{
-  margin-left: auto;
-  margin-right: 1.5rem;
+	margin-left: auto;
+	margin-right: 1.5rem;
 }
 header .sns_wrap a{
-  height: 6rem;
+	height: 6rem;
 	padding: 0 1rem;
-  line-height: 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+	line-height: 1;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 header .sns_wrap a span{
 	font-size: 2rem;
@@ -97,9 +103,9 @@ header .sns_wrap a span{
 }
 
 .menu_open{
-  width: 4rem;
-  height: 6rem;
-  position: relative;
+	width: 4rem;
+	height: 6rem;
+	position: relative;
 }
 .menu_open span{
 	position: absolute;
@@ -128,8 +134,8 @@ footer .box .txt .shop_name h3{
 	font-size: 1.3rem;
 }
 footer .box .txt .address p{
-  font-size: 0.875rem;
-  line-height: 1.6;
+	font-size: 0.875rem;
+	line-height: 1.6;
 }
 footer .box .txt .sns_wrap a{
 	margin-right: 1.25rem;
@@ -149,13 +155,13 @@ footer .box .txt .sns_wrap a{
 	margin-right: 5%;
 }
 .top01 .mv .txt h2{
-  font-size: 5rem;
-  line-height: 1.3;
+	font-size: 5rem;
+	line-height: 1.3;
 	margin-bottom: 1.25rem;
 }
 .top01 .mv .txt p{
-  font-size: 1.9rem;
-  line-height: 1.8;
+	font-size: 1.9rem;
+	line-height: 1.8;
 }
 .top01 .mv .txt p .underline{
 	font-size: 2.5rem;
@@ -181,7 +187,7 @@ footer .box .txt .sns_wrap a{
 	font-size: 1.1rem;
 }
 .top03 .box article a .txt p.name{
-  font-size: 0.9rem;
+	font-size: 0.9rem;
 }
 /*///////////////////////////////////////////////////
 //
@@ -189,10 +195,10 @@ footer .box .txt .sns_wrap a{
 //
 ///////////////////////////////////////////////////*/
 .top04 .box_in h4{
-  font-size: 2.4rem;
+	font-size: 2.4rem;
 }
 .top04 .box_in .txt{
-  margin: 3rem 0 0 auto;
+	margin: 3rem 0 0 auto;
 	padding-left: 1rem;
 }
 .top04 .box_in .txt p{
@@ -207,7 +213,7 @@ footer .box .txt .sns_wrap a{
 	padding: 3rem 0 12rem;
 }
 .top05 .ttl_wrap{
-  margin-bottom: 2.5rem;
+	margin-bottom: 2.5rem;
 }
 .top05 .box .item a .treatment_time{
 	top: -2rem;
@@ -246,7 +252,7 @@ footer .box .txt .sns_wrap a{
 	width: 38%;
 }
 .top07 .box article a .txt{
-  width: 62%;
+	width: 62%;
 	padding: 0 1.5rem 0 1rem;
 }
 .top07 .box article a .txt h4{
@@ -268,16 +274,16 @@ footer .box .txt .sns_wrap a{
 	max-width: 18rem;
 }
 .contact_wrap .box .txt .btn_wrap .btn a{
-  max-width: 18rem;
-  font-size: 0.85rem;
+	max-width: 18rem;
+	font-size: 0.85rem;
 }
 .btn a .angle{
-  font-size: 1.3rem;
-  right: 0.75rem;
+	font-size: 1.3rem;
+	right: 0.75rem;
 }
 .btn.line a .icon{
-  font-size: 1.7rem;
-  margin-right: 0.75rem;
+	font-size: 1.7rem;
+	margin-right: 0.75rem;
 }
 /*///////////////////////////////////////////////////
 //
