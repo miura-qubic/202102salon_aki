@@ -122,6 +122,9 @@ section,
 //            ▼ 共通 ▼
 //
 ///////////////////////////////////////////////////*/
+body.active{
+	overflow: hidden;
+}
 main{
 	margin-top: 8.5rem;
 }
@@ -160,6 +163,9 @@ main{
 	background: var(--line);
 	border: solid 1px var(--line);
 }
+.btn.green{
+	border: solid 1px var(--green03);
+}
 .btn::before{
 	position: absolute;
 	content: '';
@@ -173,6 +179,9 @@ main{
 }
 .btn.line::before{
 	background: #fff;
+}
+.btn.green::before{
+	background: var(--green03);
 }
 .btn:hover::before{
 	left: -5%
@@ -195,7 +204,11 @@ main{
 .btn.line a{
 	color: #fff;
 }
-.btn a:hover{
+.btn.green a{
+	color: var(--green03);
+}
+.btn a:hover,
+.btn.green a:hover{
 	color: #fff;
 }
 .btn.line a:hover{
@@ -287,7 +300,91 @@ header .sns_wrap a span{
 //            ▼ フッター ▼
 //
 ///////////////////////////////////////////////////*/
+footer .box{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+footer .box .txt{
+	width: 46%;
+}
+footer .box .txt_in{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	padding: 1vw 3vw;
+}
+footer .box .txt .logo{
+	max-width: 15rem;
+	width: 35%;
+}
+footer .box .txt .shop_name{
+	margin: 0.75vw 0 1.5vw;
+	color: var(--brown);
+}
+footer .box .txt .shop_name p{
+	font-size: 0.875rem;
+	letter-spacing: 0.05em;
+}
+footer .box .txt .shop_name h3{
+	font-size: 1.5rem;
+	font-weight: normal;
+	line-height: 1.5;
+	letter-spacing: 0.05em;
+}
+footer .box .txt .address p{
+	letter-spacing: 0.05em;
+}
+footer .box .txt .address p + p{
+	margin-top: 1.5rem;
+}
+footer .box .txt .sns_wrap{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 1.5vw;
+}
+footer .box .txt .sns_wrap a{
+	margin-right: 1.5rem;
+	font-size: 2.8rem;
+	line-height: 1;
+	color: var(--brown);
+	transition: 1s;
+}
+footer .box .txt .sns_wrap a:last-of-type{
+	margin-right: 0;
+}
+footer .box .txt .sns_wrap a:hover{
+	color: var(--emegreen);
+}
 
+footer .box .r_box{
+	width: 54%;
+}
+.gmap{
+	overflow: hidden;
+	height: 55vh;
+	min-height: 250px;
+	position: relative;
+}
+.gmap iframe{
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+}
+footer .copyright{
+	background: var(--brown);
+	padding: 1.5rem;
+}
+footer .copyright p{
+	color: #fff;
+	text-align: center;
+	font-size: 0.875rem;
+}
 /*///////////////////////////////////////////////////
 //
 //            ▼ トップ01 ▼
@@ -445,6 +542,8 @@ header .sns_wrap a span{
 }
 .top03 .box article a .txt h4{
 	font-size: 1.25rem;
+	line-height: 1.5;
+	margin-bottom: 0.25rem;
 	color: var(--brown);
 }
 .top03 .box article a .txt .inner{
@@ -611,6 +710,7 @@ header .sns_wrap a span{
 .top05 .box .item .txt{
 	margin-top: 1.5rem;
 	text-align: center;
+	padding: 0 1.5rem;
 }
 .top05 .box .item .txt h4{
 	position: relative;
@@ -798,11 +898,12 @@ header .sns_wrap a span{
 //
 ///////////////////////////////////////////////////*/
 .top08{
-	padding: 6rem 0;
+	padding: 6rem 0 10rem;
 }
 .top08 .box{
+	position: relative;
 	background: rgba(196,227,204,.3);
-	padding: 3rem;
+	padding: 5rem 3rem 6rem;
 	text-align: center;
 }
 .top08 .box h3{
@@ -813,6 +914,93 @@ header .sns_wrap a span{
 }
 .top08 .box p + p{
 	margin-top: 1.5rem;
+}
+.top08 .box .btn{
+	margin-top: 3rem;
+}
+.top08 .box .fig{
+	position: absolute;
+	width: 14rem;
+}
+.top08 .box .fig img{
+	width: 100%;
+	height: auto;
+}
+.top08 .box .fig01{
+	top: 1rem;
+	left: 1rem;
+}
+.top08 .box .fig02{
+	bottom: 1rem;
+	right: 1rem;
+}
+/*///////////////////////////////////////////////////
+//
+//            ▼ お問い合わせ 共通 ▼
+//
+///////////////////////////////////////////////////*/
+.contact_wrap .box{
+	display: flex;
+}
+.contact_wrap .box .img{
+	position: relative;
+	width: 46%;
+}
+.contact_wrap .box .img::before{
+	position: absolute;
+	content: '';
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(229,242,232,.25);
+}
+.contact_wrap .box .img img{
+	object-position: 20% 50%; 
+}
+.contact_wrap .box .txt{
+	width: 54%;
+	padding: 5vw 3vw;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background: #FAFAFA;
+}
+.contact_wrap .box .txt .ttl_wrap{
+	margin-bottom: 3vw;
+}
+.contact_wrap .box .txt p.copy{
+	font-size: 1.5rem;
+	color: var(--green03);
+}
+.contact_wrap .box .txt .btn_wrap{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	margin-top: 3.5vw;
+}
+.contact_wrap .box .txt .btn_wrap .btn{
+	max-width: 20rem;
+	margin: 0 1.75vw 0 0;
+}
+.contact_wrap .box .txt .btn_wrap .btn:last-of-type{
+	margin-right: 0;
+}
+.contact_wrap .box .txt .btn_wrap .btn a{
+	max-width: 20rem;
+	font-size: 1rem;
+}
+.btn a .angle{
+	right: 1.25rem;
+	font-size: 1.5rem;
+}
+.btn a:hover .angle{
+	right: 0.5rem;
+}
+.btn.line a .icon{
+	font-size: 2rem;
 }
 /*///////////////////////////////////////////////////
 //
@@ -881,6 +1069,10 @@ header .sns_wrap a span{
 .campaign .txt_wrap{
 	width: 66%;
 	padding-left: 2rem;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: flex-start;
 }
 .campaign .txt_wrap .txt p{
 	font-size: 1.125rem;
@@ -888,12 +1080,16 @@ header .sns_wrap a span{
 .campaign .txt_wrap .txt p span{
 	font-weight: bold;
 }
+.campaign .txt_wrap .img{
+	max-width: 600px;
+	width: 100%;
+}
 .campaign .txt_wrap .img img{
 	width: 100%;
 	height: auto;
 }
 .campaign .btn{
-	margin-top: 2.5rem;
+	margin-top: auto;
 }
 /*///////////////////////////////////////////////////
 //

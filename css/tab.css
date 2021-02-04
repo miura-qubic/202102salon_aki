@@ -6,6 +6,42 @@
 main{
 	margin-top: 6rem;
 }
+#overlay{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,.9);
+  opacity: 0;
+  transition: .7s;
+  z-index: 49999;
+}
+#overlay.active{
+  opacity: 1;
+}
+.ttl_wrap{
+	margin-bottom: 2rem;
+}
+.ttl_wrap .txt01{
+	font-size: 1rem;
+}
+.ttl_wrap .ttl{
+	font-size: 3rem;
+	font-family: 'Roboto', sans-serif;
+	line-height: 1;
+	letter-spacing: 0.05em;
+	margin-top: 0.5rem;
+}
+
+.btn{
+	max-width: 22rem;
+}
+.btn a{
+	font-size: 0.95rem;
+	max-width: 22rem;
+	height: 3.5rem;
+}
 /*///////////////////////////////////////////////////
 //
 //            ▼ ナビ ▼
@@ -27,8 +63,9 @@ header nav{
   width: 50%;
   height: 100%;
   background: rgba(255,255,255,.95);
+  padding: 3rem 0;
   z-index: 50001;
-  transition: 1s;
+  transition: .7s;
 }
 header nav.active{
   right: 0;
@@ -37,7 +74,9 @@ header nav ul{
   display: block;
 }
 header nav ul li a{
-  font-size: 1rem;
+  font-size: 1.1rem;
+  height: auto;
+  padding: 1.5rem 2.5rem;
 }
 
 header .sns_wrap{
@@ -79,14 +118,70 @@ header .sns_wrap a span{
 .menu_open.active span:nth-of-type(3){transform:translate(-50%,-50%) rotate(-45deg);}
 /*///////////////////////////////////////////////////
 //
+//            ▼ フッター ▼
+//
+///////////////////////////////////////////////////*/
+footer .box .txt .shop_name p{
+	font-size: 0.8rem;
+}
+footer .box .txt .shop_name h3{
+	font-size: 1.3rem;
+}
+footer .box .txt .address p{
+  font-size: 0.875rem;
+  line-height: 1.6;
+}
+footer .box .txt .sns_wrap a{
+	margin-right: 1.25rem;
+	font-size: 2.2rem;
+}
+.gmap{
+	height: 30vh;
+	min-height: 305px;
+}
+/*///////////////////////////////////////////////////
+//
+//            ▼ トップ01 ▼
+//
+///////////////////////////////////////////////////*/
+.top01 .mv{
+	padding: 2.75rem 2.75rem 8rem 2rem;
+	margin-right: 5%;
+}
+.top01 .mv .txt h2{
+  font-size: 5rem;
+  line-height: 1.3;
+	margin-bottom: 1.25rem;
+}
+.top01 .mv .txt p{
+  font-size: 1.9rem;
+  line-height: 1.8;
+}
+.top01 .mv .txt p .underline{
+	font-size: 2.5rem;
+}
+.top01 .mv .txt p .underline::before{
+	height: 1.75rem;
+}
+/*///////////////////////////////////////////////////
+//
 //            ▼ トップ03 ▼
 //
 ///////////////////////////////////////////////////*/
+.top03::before{
+	top: 9.75rem;
+}
 .top03 .box article a .txt{
 	padding-left: 1rem;
 }
 .top03 .box article a .txt .inner{
 	margin-top: 1.5rem;
+}
+.top03 .box article a .txt h4{
+	font-size: 1.1rem;
+}
+.top03 .box article a .txt p.name{
+  font-size: 0.9rem;
 }
 /*///////////////////////////////////////////////////
 //
@@ -95,6 +190,33 @@ header .sns_wrap a span{
 ///////////////////////////////////////////////////*/
 .top04 .box_in h4{
   font-size: 2.4rem;
+}
+.top04 .box_in .txt{
+  margin: 3rem 0 0 auto;
+	padding-left: 1rem;
+}
+.top04 .box_in .txt p{
+	font-size: 1.1rem;
+}
+/*///////////////////////////////////////////////////
+//
+//            ▼ トップ05 ▼
+//
+///////////////////////////////////////////////////*/
+.top05{
+	padding: 3rem 0 12rem;
+}
+.top05 .ttl_wrap{
+  margin-bottom: 2.5rem;
+}
+.top05 .box .item a .treatment_time{
+	top: -2rem;
+	right: 0.5rem;
+	width: 4rem;
+	height: 4rem;
+}
+.top05 .box .item a .treatment_time p{
+	font-size: 0.9rem;
 }
 /*///////////////////////////////////////////////////
 //
@@ -117,6 +239,9 @@ header .sns_wrap a span{
 //            ▼ トップ07 ▼
 //
 ///////////////////////////////////////////////////*/
+.top07{
+	padding: 6rem 0 4rem;
+}
 .top07 .box article a .img{
 	width: 38%;
 }
@@ -130,4 +255,51 @@ header .sns_wrap a span{
 }
 .top07 .box article a .txt time{
 	margin-top: 0.5rem;
+}
+/*///////////////////////////////////////////////////
+//
+//            ▼ お問い合わせ 共通 ▼
+//
+///////////////////////////////////////////////////*/
+.contact_wrap .box .txt p.copy{
+	font-size: 1.2rem;
+}
+.contact_wrap .box .txt .btn_wrap .btn{
+	max-width: 18rem;
+}
+.contact_wrap .box .txt .btn_wrap .btn a{
+  max-width: 18rem;
+  font-size: 0.85rem;
+}
+.btn a .angle{
+  font-size: 1.3rem;
+  right: 0.75rem;
+}
+.btn.line a .icon{
+  font-size: 1.7rem;
+  margin-right: 0.75rem;
+}
+/*///////////////////////////////////////////////////
+//
+//            ▼ キャンペーンバナー ▼
+//
+///////////////////////////////////////////////////*/
+.campaign .limited{
+	top: -2.25rem;
+	left: -2rem;
+	width: 4.5rem;
+	height: 4.5rem;
+}
+.campaign .limited p{
+	font-size: 1.3rem;
+}
+.campaign .ttl_box .ttl{
+	font-size: 1.7rem;
+}
+.campaign .campaign_in{
+	padding: 1.5rem;
+}
+.campaign .txt_wrap .img{
+	max-width: 500px;
+	width: 85%;
 }
