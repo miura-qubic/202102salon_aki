@@ -217,12 +217,7 @@ main{
 .fade_side_l.active{
 	opacity: 1;
 	transform: translateY(0);
-}
-.fade_side01.active{
-	transition: 1s .5s;
-}
-.fade_side02.active{
-	transition: 1s 1s;
+	transition: 1s;
 }
 .txt_show{
 	opacity: 0;
@@ -324,7 +319,7 @@ header .sns_wrap a span{
 	background: var(--brown);
 	width: 40%;
 	height: 2px;
-	transition: .3s;
+	transition: .7s;
 }
 .menu_open span:nth-of-type(1){transform:translate(-50%,-50%) translateY(6px);}
 .menu_open span:nth-of-type(2){transform:translate(-50%,-50%);}
@@ -498,11 +493,11 @@ footer .copyright p{
 //            ▼ トップ03 ▼
 //
 ///////////////////////////////////////////////////*/
-.top03{
+.before_after_wrap{
 	padding: 3rem 0 7rem;
 	overflow: hidden;
 }
-.top03::before{
+.before_after_wrap.top03::before{
 	position: absolute;
 	content: '';
 	top: 5.5rem;
@@ -511,59 +506,59 @@ footer .copyright p{
 	height: 100%;
 	background: rgba(229,242,232,.4);
 }
-.top03_in{
+.before_after_wrap_in{
 	position: relative;
 	z-index: 2;
 }
-.top03 .box article{
+.before_after_wrap .box article{
 	background: #fff;
 	box-shadow: 0 2px 8px rgba(0,0,0,.15);
 	margin-top: 1.25rem;
 }
-.top03 .box article:first-of-type{
+.before_after_wrap .box article:first-of-type{
 	margin-top: 0;
 }
-.top03 .box article a{
+.before_after_wrap .box article a{
 	position: relative;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	padding: 0.75rem;
 }
-.top03 .box article a .img{
+.before_after_wrap .box article a .img{
 	width: 35%;
 	z-index: 2;
 }
-.top03 .box article a .img img{
+.before_after_wrap .box article a .img img{
 	width: 100%;
 	height: auto;
 }
-.top03 .box article a .txt{
+.before_after_wrap .box article a .txt{
 	width: 65%;
 	padding-left: 0.75rem;
 }
-.top03 .box article a .txt h4{
+.before_after_wrap .box article a .txt h4{
 	font-size: 0.9rem;
 	line-height: 1.5;
 	color: var(--brown);
 }
-.top03 .box article a .txt p.name{
+.before_after_wrap .box article a .txt p.name{
 	font-size: 0.86rem;
 }
-.top03 .box article a .txt .inner{
+.before_after_wrap .box article a .txt .inner{
 	margin-top: 0.5rem;
 }
-.top03 .box article a .txt .inner h5{
+.before_after_wrap .box article a .txt .inner h5{
 	font-size: 0.85rem;
 	color: var(--brown);
 	-webkit-line-clamp: 1;
 }
-.top03 .box article a .txt .inner p{
+.before_after_wrap .box article a .txt .inner p{
 	font-size: 0.75rem;
 	color: #666;
 	line-height: 1.5;
 }
-.top03 .btn{
+.before_after_wrap .btn{
 	margin-top: 2.5rem;
 }
 /*///////////////////////////////////////////////////
