@@ -151,23 +151,23 @@ footer .box .txt .sns_wrap a{
 //
 ///////////////////////////////////////////////////*/
 .top01 .mv{
-	padding: 2.75rem 2.75rem 8rem 2rem;
+	padding: 3.667vw 3.667vw 9.334vw 2rem;
 	margin-right: 5%;
 }
 .top01 .mv .txt h2{
-	font-size: 5rem;
+	font-size: 8.667vw;
 	line-height: 1.3;
 	margin-bottom: 1.25rem;
 }
 .top01 .mv .txt p{
-	font-size: 1.9rem;
+	font-size: 2.667vw;
 	line-height: 1.8;
 }
 .top01 .mv .txt p .underline{
-	font-size: 2.5rem;
+	font-size: 3.667vw;
 }
 .top01 .mv .txt p .underline::before{
-	height: 1.75rem;
+	height: 2.667vw;
 }
 /*///////////////////////////////////////////////////
 //

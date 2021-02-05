@@ -195,6 +195,42 @@ main{
 	writing-mode: vertical-rl;
 	text-orientation: upright;
 }
+
+.fadein{
+	opacity: 0;
+	transform: translateY(50px);
+}
+.fadein.active{
+	opacity: 1;
+	transform: translateY(0);
+	transition: 1s;
+}
+.fade_side_r{
+	opacity: 0;
+	transform: translateX(-50px);
+}
+.fade_side_l{
+	opacity: 0;
+	transform: translateX(50px);
+}
+.fade_side_r.active,
+.fade_side_l.active{
+	opacity: 1;
+	transform: translateY(0);
+}
+.fade_side01.active{
+	transition: 1s .5s;
+}
+.fade_side02.active{
+	transition: 1s 1s;
+}
+.txt_show{
+	opacity: 0;
+}
+.txt_show.active{
+	opacity: 1;
+	transition: opacity 1.3s cubic-bezier(.79,.01,.21,.96) .5s;
+}
 /*///////////////////////////////////////////////////
 //
 //            ▼ ナビ ▼
@@ -441,7 +477,7 @@ footer .copyright p{
 	height: 1.1rem;
 	background: #849989;
 	z-index: -1;
-	transition: 1s cubic-bezier(.79,.01,.21,.96);
+	transition: 1s cubic-bezier(.79,.01,.21,.96) 1.2s;
 }
 .top01 .mv .txt p .underline.active::before{
 	width: 104%;

@@ -273,7 +273,7 @@ main{
 }
 .txt_show.active{
 	opacity: 1;
-	transition: opacity 1.3s cubic-bezier(.79,.01,.21,.96);
+	transition: opacity 1.3s cubic-bezier(.79,.01,.21,.96) .5s;
 }
 /*///////////////////////////////////////////////////
 //
@@ -321,6 +321,10 @@ header nav ul li a{
 	height: 8.5rem;
 	padding: 1vw;
 	white-space: nowrap;
+	transition: .7s;
+}
+header nav ul li a:hover{
+	color: var(--emegreen);
 }
 header .sns_wrap{
 	display: flex;
@@ -331,6 +335,10 @@ header .sns_wrap a{
 	color: var(--brown);
 	padding: 0.3vw 0.8vw;
 	line-height: 1;
+	transition: .7s;
+}
+header .sns_wrap a:hover{
+	color: var(--emegreen);
 }
 header .sns_wrap a span{
 	font-size: 1.8rem;
@@ -392,7 +400,7 @@ footer .box .txt .sns_wrap a{
 	font-size: 2.8rem;
 	line-height: 1;
 	color: var(--brown);
-	transition: 1s;
+	transition: .7s;
 }
 footer .box .txt .sns_wrap a:last-of-type{
 	margin-right: 0;
@@ -460,20 +468,20 @@ footer .copyright p{
 	z-index: 2;
 }
 .top01 .mv .txt h2{
-	font-size: 8.625rem;
+	font-size: 7.334vw;
 	line-height: 1.4;
 	letter-spacing: 0.025em;
 	margin-bottom: 1.5rem;
 }
 .top01 .mv .txt p{
-	font-size: 2.8125rem;
+	font-size: 2.334vw;
 	font-weight: bold;
 	letter-spacing: 0.025em;
 }
 .top01 .mv .txt p .underline{
 	position: relative;
 	display: inline-block;
-	font-size: 3.4375rem;
+	font-size: 2.667vw;
 }
 .top01 .mv .txt p .underline::before{
 	position: absolute;
@@ -481,10 +489,10 @@ footer .copyright p{
 	top: 50%;
 	left: -2%;
 	width: 0;
-	height: 2.25rem;
+	height: 1.667vw;
 	background: #849989;
 	z-index: -1;
-	transition: 1s cubic-bezier(.79,.01,.21,.96) .8s;
+	transition: 1s cubic-bezier(.79,.01,.21,.96) 1.2s;
 }
 .top01 .mv .txt p .underline.active::before{
 	width: 104%;
