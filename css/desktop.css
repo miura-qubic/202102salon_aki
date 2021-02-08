@@ -1190,7 +1190,7 @@ footer .copyright p{
 }
 .campaign_lower .txt .fig{
 	position: absolute;
-	top: -1.5rem;
+	top: -1.25rem;
 	left: 50%;
 	transform: translateX(-50%);
 	width: 4.5rem;
@@ -1204,6 +1204,14 @@ footer .copyright p{
 	line-height: 1;
 	font-weight: bold;
 	color: #555;
+}
+.campaign_lower .txt p.course{
+	font-size: 1rem;
+	font-weight: normal;
+	line-height: 1.2;
+}
+.campaign_lower .txt p.price{
+	margin-top: -1.5rem;
 }
 .campaign_lower .txt p .large_txt{
 	color: var(--green02);
@@ -1275,19 +1283,20 @@ footer .copyright p{
 table{
 	width: 100%;
 	border: solid 1px #707070;
-	overflow: scroll;
 }
 table th,
 table td{
-	font-size: 0.7rem;
+	font-size: 0.75rem;
 	line-height: 1.5;
 	border: solid 1px #707070;
-	padding: 0.5rem 1.5rem;
+	padding: 0.75rem 1.5rem;
 }
 table th{
 	background: #C4E3CC;
 }
-table td{
+table tbody th,
+table tbody td{
+	font-weight: normal;
 	text-align: center;
 	background: #fff;
 }
@@ -1297,12 +1306,12 @@ table td.price{
 table td.txt_l{
 	text-align: left;
 }
-table td.recommend{
+table th.recommend{
 	position: relative;
 	background: rgba(121,91,55,.25);
 	border: solid 3px #707070;
 }
-table td.recommend .icon{
+table th.recommend .icon{
 	position: absolute;
 	top: -0.75rem;
 	left: -0.75rem;
@@ -1316,12 +1325,12 @@ table td.recommend .icon{
 	justify-content: center;
 	transform: rotate(-15deg);
 }
-table td.recommend .icon.icon02{
+table th.recommend .icon.icon02{
 	left: -1.25rem;
 	width: 5rem;
 	height: 3.125rem;
 }
-table td.recommend .icon p{
+table th.recommend .icon p{
 	color: #fff;
 	font-size: 0.73rem;
 	line-height: 1.3;
@@ -1473,11 +1482,11 @@ table td.recommend .icon p{
 }
 .menu_price02#contents01 table th,
 .menu_price02#contents01 table td{
-	padding: 0.5rem 0.1rem;
+	padding: 0.75rem 0.2rem;
 }
 .menu_price02#contents02 table th,
 .menu_price02#contents02 table td{
-	padding: 0.5rem;
+	padding: 0.75rem;
 }
 .menu_price02#contents03 table{
 	width: 20rem;
@@ -1489,6 +1498,10 @@ table td.recommend .icon p{
 .menu_price02#contents04 table{
 	width: 35%;
 	margin-top: -3.5rem;
+}
+.menu_price02#contents04 table th,
+.menu_price02#contents04 table td{
+	padding: 0.75rem 1rem;
 }
 .menu_price02 .notes{
 	margin-top: 0.5rem;

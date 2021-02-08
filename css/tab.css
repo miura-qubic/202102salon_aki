@@ -14,11 +14,13 @@ main{
 	height: 100%;
 	background: rgba(0,0,0,.9);
 	opacity: 0;
+	visibility: hidden;
 	transition: .7s;
 	z-index: 49999;
 }
 #overlay.active{
 	opacity: 1;
+	visibility: visible;
 }
 .ttl_wrap{
 	margin-bottom: 2rem;
@@ -322,9 +324,12 @@ footer .box .txt .sns_wrap a{
 .campaign_lower .txt p{
 	font-size: 1.5rem;
 }
+.campaign_lower .txt p.course{
+	font-size: 0.85rem;
+}
 .campaign_lower .txt p .large_txt{
 	color: var(--green02);
-	font-size: 3.8rem;
+	font-size: 4rem;
 }
 .campaign_lower .txt p .medium_txt{
 	font-size: 2rem;
@@ -342,7 +347,7 @@ footer .box .txt .sns_wrap a{
 ///////////////////////////////////////////////////*/
 table th,
 table td{
-	font-size: 0.6rem;
+	font-size: 0.7rem;
 }
 table td.recommend .icon{
 	top: -0.5rem;
@@ -408,6 +413,10 @@ table td.recommend .icon p{
 }
 .menu_price02#contents04 table{
 	margin-top: -2rem;
+}
+.menu_price02#contents04 table th,
+.menu_price02#contents04 table td{
+	padding: 0.75rem 0.5rem;
 }
 /*///////////////////////////////////////////////////
 //

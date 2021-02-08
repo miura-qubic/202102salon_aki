@@ -53,7 +53,7 @@
 	<![endif]-->
 </head>
 
-<body class="preload">
+<body class="preload" onLoad="FixedMidashi.create();">
 	<div id="wrapper">
 		<header>
 			<div class="header_in">
@@ -100,7 +100,12 @@
 
 				<div class="l_container">
 					<div class="mv fadein fade02">
-						<img src="./images/menu_price/mv.jpg" alt="施術メニュー・料金">
+						<picture>
+							<source media="(min-width: 768px)" srcset="./images/menu_price/mv.jpg">
+							<source media="(max-width: 767px)" srcset="./images/menu_price/mv_sp.jpg">
+
+							<img src="./images/menu_price/mv.jpg" alt="施術メニュー・料金">
+						</picture>
 					</div>
 				</div>
 			</section>
@@ -132,12 +137,12 @@
 							<div class="txt fade_side_l fade_side00">
 								<h2>リフトアップ</h2>
 								<p>
-									3D顔筋マシンを利用したリフトアップ を施術します。<br>
+									3D顔筋マシンを利用したリフトアップ を施術します。<br class="is_pc">
 									表情筋を鍛えることで、たるみやしわを改善し、フェイスラインが引き締まりリフトアップ 効果を実感していただけます。<br>
 									40年以上リフトアップ を科学的に研究してきたたるみ専用美顔です。<br>
 									一度のお試しだけでリフトアップ を実感される方が非常に多く、リピート率は80%を誇ります。
 								</p>
-								<div class="btn">
+								<div class="btn is_pc">
 									<a href="#">
 										ボワールリフティングとは
 										<span class="angle"><i class="fas fa-angle-right"></i></span>
@@ -152,190 +157,126 @@
 							</div>
 						</div>
 
-						<table class="fadein fade02">
-							<thead>
-								<tr>
-									<th>コース名</th>
-									<th rowspan="2">所要<br class="is_tab">時間</th>
-									<th rowspan="2">通常<br class="is_tab">（1回）</th>
-									<th rowspan="2">初回<br class="is_tab">お試し</th>
-									<th>10回券</th>
-									<th>20回券</th>
-									<th>30回券</th>
-									<th rowspan="2">クレン<br class="is_tab">ジング</th>
-									<th rowspan="2">
-										エレクトロ<br class="is_tab">クレンジング<br>
-										（毛穴・<br class="is_tab">角質ケア）
-									</th>
-									<th rowspan="2">
-										MF<br>
-										老廃物・<br class="is_tab">脂肪燃焼
-									</th>
-									<th rowspan="2">
-										LF<br>
-										表情<br class="is_tab">筋トレ
-									</th>
-									<th rowspan="2">美容液<br class="is_tab">導入</th>
-									<th rowspan="2">パック</th>
-								</tr>
-								<tr>
-									<th>ボワール<br class="is_tab">リフティング</th>
-									<th>1回<br class="is_tab">あたり</th>
-									<th>1回<br class="is_tab">あたり</th>
-									<th>1回<br class="is_tab">あたり</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<td rowspan="2">シンプル</td>
-									<td rowspan="2">１００分</td>
-									<td rowspan="2">19,000円</td>
-									<td rowspan="2">－</td>
-									<td class="price">170,000円</td>
-									<td class="price">320,000円</td>
-									<td class="price">450,000円</td>
-									<td rowspan="2">●</td>
-									<td rowspan="2">●</td>
-									<td rowspan="2">●</td>
-									<td rowspan="2">●</td>
-									<td rowspan="2">－</td>
-									<td rowspan="2">●</td>
-								</tr>
-								<tr>
-									<td class="price">17,000円</td>
-									<td class="price">16,000円</td>
-									<td class="price">15,000円</td>
-								</tr>
-								<tr>
-									<td class="recommend" rowspan="2">
-										ベーシック
-										<div class="icon">
-											<p>一番<br>人気</p>
-										</div>
-									</td>
-									<td rowspan="2">１２０分</td>
-									<td rowspan="2">20,000円</td>
-									<td rowspan="2">11,000円</td>
-									<td class="price">190,000円</td>
-									<td class="price">360,000円</td>
-									<td class="price">480,000円</td>
-									<td rowspan="2">●</td>
-									<td rowspan="2">●</td>
-									<td rowspan="2">●</td>
-									<td rowspan="2">●</td>
-									<td rowspan="2">FGF</td>
-									<td rowspan="2">●</td>
-								</tr>
-								<tr>
-									<td class="price">19,000円</td>
-									<td class="price">18,000円</td>
-									<td class="price">16,000円</td>
-								</tr>
-								<tr>
-									<td rowspan="2">
-										SP<br>
-										（ヒアルロン酸）
-									</td>
-									<td rowspan="2">１２０分</td>
-									<td rowspan="2">23,000円</td>
-									<td rowspan="2">－</td>
-									<td class="price">210,000円</td>
-									<td class="price">400,000円</td>
-									<td class="price">540,000円</td>
-									<td rowspan="2">●</td>
-									<td rowspan="2">●</td>
-									<td rowspan="2">●</td>
-									<td rowspan="2">●</td>
-									<td rowspan="2">
-										FGF<br>
-										ヒアルロン酸
-									</td>
-									<td rowspan="2">●</td>
-								</tr>
-								<tr>
-									<td class="price">21,000円</td>
-									<td class="price">20,000円</td>
-									<td class="price">18,000円</td>
-								</tr>
-								<tr>
-									<td rowspan="2">
-										SP<br>
-										（ビタミンC）
-									</td>
-									<td rowspan="2">１２０分</td>
-									<td rowspan="2">23,000円</td>
-									<td rowspan="2">－</td>
-									<td class="price">210,000円</td>
-									<td class="price">400,000円</td>
-									<td class="price">540,000円</td>
-									<td rowspan="2">●</td>
-									<td rowspan="2">●</td>
-									<td rowspan="2">●</td>
-									<td rowspan="2">●</td>
-									<td rowspan="2">
-										FGF<br>
-										ビタミンC
-									</td>
-									<td rowspan="2">●</td>
-								</tr>
-								<tr>
-									<td class="price">21,000円</td>
-									<td class="price">20,000円</td>
-									<td class="price">18,000円</td>
-								</tr>
-								<tr>
-									<td rowspan="2">
-										SP<br>
-										（アテロコラーゲン<br class="is_tab">&リンゴ幹細胞）
-									</td>
-									<td rowspan="2">１２０分</td>
-									<td rowspan="2">23,800円</td>
-									<td rowspan="2">－</td>
-									<td class="price">218,000円</td>
-									<td class="price">416,000円</td>
-									<td class="price">564,000円</td>
-									<td rowspan="2">●</td>
-									<td rowspan="2">●</td>
-									<td rowspan="2">●</td>
-									<td rowspan="2">●</td>
-									<td rowspan="2">
-										FGF<br>
-										アテロ
-									</td>
-									<td rowspan="2">●</td>
-								</tr>
-								<tr>
-									<td class="price">21,800円</td>
-									<td class="price">20,800円</td>
-									<td class="price">18,800円</td>
-								</tr>
-								<tr>
-									<td class="recommend" rowspan="2">
-										筋トレ
-										<div class="icon icon02">
-											<p>初めての人に<br>オススメ</p>
-										</div>
-									</td>
-									<td rowspan="2">９０分</td>
-									<td rowspan="2">17,000円</td>
-									<td rowspan="2">8,500円</td>
-									<td class="price">160,000円</td>
-									<td>－</td>
-									<td>－</td>
-									<td rowspan="2">●</td>
-									<td rowspan="2">－</td>
-									<td rowspan="2">●</td>
-									<td rowspan="2">●</td>
-									<td rowspan="2">－</td>
-									<td rowspan="2">●</td>
-								</tr>
-								<tr>
-									<td class="price">16,000円</td>
-									<td>－</td>
-									<td>－</td>
-								</tr>
-							</tbody>
-						</table>
+						<div class="table_wrap fadein fade02">
+							<table _fixedhead="rows:0; cols:1">
+								<thead>
+									<tr>
+										<th>コース名</th>
+										<th rowspan="2">所要<br class="is_tab">時間</th>
+										<th rowspan="2">価格</th>
+										<th rowspan="2">初回<br class="is_tab">お試し</th>
+										<th rowspan="2">クレン<br class="is_tab">ジング</th>
+										<th rowspan="2">
+											エレクトロ<br class="is_tab">クレンジング<br>
+											（毛穴・角質ケア）
+										</th>
+										<th rowspan="2">
+											MF<br>
+											老廃物・<br class="is_tab">脂肪燃焼
+										</th>
+										<th rowspan="2">
+											LF<br>
+											表情<br class="is_tab">筋トレ
+										</th>
+										<th rowspan="2">美容液<br class="is_tab">導入</th>
+										<th rowspan="2">パック</th>
+									</tr>
+									<tr>
+										<th>ボワール<br class="is_tab">リフティング</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<th>シンプル</th>
+										<td>１００分</td>
+										<td>15,000円〜</td>
+										<td>－</td>
+										<td>●</td>
+										<td>●</td>
+										<td>●</td>
+										<td>●</td>
+										<td>－</td>
+										<td>●</td>
+									</tr>
+									<tr>
+										<th class="recommend">
+											ベーシック
+											<div class="icon">
+												<p>一番<br>人気</p>
+											</div>
+										</th>
+										<td>１２０分</td>
+										<td>16,000円〜</td>
+										<td>11,000円</td>
+										<td>●</td>
+										<td>●</td>
+										<td>●</td>
+										<td>●</td>
+										<td>FGF</td>
+										<td>●</td>
+									</tr>
+									<tr>
+										<th>SP<br>（ヒアルロン酸）</th>
+										<td>１２０分</td>
+										<td>18,000円〜</td>
+										<td>－</td>
+										<td>●</td>
+										<td>●</td>
+										<td>●</td>
+										<td>●</td>
+										<td>
+											FGF<br>
+											ヒアルロン酸
+										</td>
+										<td>●</td>
+									</tr>
+									<tr>
+										<th>SP<br>（ビタミンC）</th>
+										<td>１２０分</td>
+										<td>18,000円〜</td>
+										<td>－</td>
+										<td>●</td>
+										<td>●</td>
+										<td>●</td>
+										<td>●</td>
+										<td>FGF<br>ビタミンC</td>
+										<td>●</td>
+									</tr>
+									<tr>
+										<th>
+											SP<br>
+											（アテロコラーゲン<br class="is_tab">&リンゴ幹細胞）
+										</th>
+										<td>１２０分</td>
+										<td>18,800円〜</td>
+										<td>－</td>
+										<td>●</td>
+										<td>●</td>
+										<td>●</td>
+										<td>●</td>
+										<td>FGF<br>アテロ</td>
+										<td>●</td>
+									</tr>
+									<tr>
+										<th class="recommend">
+											筋トレ
+											<div class="icon icon02">
+												<p>初めての人に<br>オススメ</p>
+											</div>
+										</th>
+										<td>９０分</td>
+										<td>16,000円〜</td>
+										<td>8,500円</td>
+										<td rowspan="2">●</td>
+										<td rowspan="2">－</td>
+										<td rowspan="2">●</td>
+										<td rowspan="2">●</td>
+										<td rowspan="2">－</td>
+										<td rowspan="2">●</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
 
 						<div class="notes fadein fade02">
 							<p>※価格は全て税抜き価格</p>
@@ -349,7 +290,8 @@
 							<div class="campaign_lower_in">
 								<div class="txt">
 									<div class="fig"><img src="./images/common/campaign_txt02.png" alt="52%OFF"></div>
-									<p>LINE予約で初回お試し<span class="large_txt">8,000</span><span class="medium_txt">円</span></p>
+									<p class="course">ボワールリフティング <br class="is_pc">表情筋トレーニングコース</p>
+									<p class="price">LINE予約で初回お試し<span class="large_txt">8,000</span><span class="medium_txt">円</span></p>
 								</div>
 								<div class="btn line">
 									<a href="#" target="_blank" rel="noopener">
@@ -382,50 +324,40 @@
 							</div>
 						</div>
 		
-						<table class="fadein fade02">
-							<thead>
-								<tr>
-									<th rowspan="2">コース名</th>
-									<th rowspan="2">所要<br class="is_tab">時間</th>
-									<th rowspan="2">通常<br class="is_tab">（1回）</th>
-									<th rowspan="2">初回<br class="is_tab">お試し</th>
-									<th>10回券</th>
-									<th>20回券</th>
-									<th rowspan="2">クレン<br class="is_tab">ジング</th>
-									<th rowspan="2">
-										エレクトロ<br class="is_tab">クレンジング<br>
-										（毛穴・<br class="is_tab">角質ケア）
-									</th>
-									<th rowspan="2">
-										MF<br>
-										老廃物・<br class="is_tab">脂肪燃焼
-									</th>
-									<th rowspan="2">パック</th>
-								</tr>
-								<tr>
-									<th>1回<br class="is_tab">あたり</th>
-									<th>1回<br class="is_tab">あたり</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<td rowspan="2">小顔造形</td>
-									<td rowspan="2">６０分</td>
-									<td rowspan="2">9,800円</td>
-									<td rowspan="2">6,000円</td>
-									<td class="price">88,000円</td>
-									<td class="price">(5回）46,500円</td>
-									<td rowspan="2">●</td>
-									<td rowspan="2">●</td>
-									<td rowspan="2">●</td>
-									<td rowspan="2">●</td>
-								</tr>
-								<tr>
-									<td class="price">8,800円</td>
-									<td class="price">(5回）9,300円</td>
-								</tr>
-							</tbody>
-						</table>
+						<div class="table_wrap fadein fade02">
+							<table _fixedhead="rows:0; cols:1">
+								<thead>
+									<tr>
+										<th>コース名</th>
+										<th>所要時間</th>
+										<th>価格</th>
+										<th>初回<br class="is_tab">お試し</th>
+										<th>クレンジング</th>
+										<th>
+											エレクトロ<br class="is_tab">クレンジング<br>
+											（毛穴・角質ケア）
+										</th>
+										<th>
+											MF<br>
+											老廃物・<br class="is_tab">脂肪燃焼
+										</th>
+										<th>パック</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<th>小顔造形</th>
+										<td>６０分</td>
+										<td>8,800円〜</td>
+										<td>6,000円</td>
+										<td>●</td>
+										<td>●</td>
+										<td>●</td>
+										<td>●</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
 		
 						<div class="notes fadein fade02">
 							<p>※価格は全て税抜き価格</p>
@@ -457,19 +389,21 @@
 							</div>
 						</div>
 		
-						<table class="fadein fade02">
-							<thead>
-								<tr>
-									<th>所要時間</th>
-									<th >通常（1回）</th>
-							</thead>
-							<tbody>
-								<tr>
-									<td>30分</td>
-									<td>3,000円</td>
-								</tr>
-							</tbody>
-						</table>
+						<div class="table_wrap fadein fade02">
+							<table>
+								<thead>
+									<tr>
+										<th>所要時間</th>
+										<th>価格</th>
+								</thead>
+								<tbody>
+									<tr>
+										<td>30分</td>
+										<td>3,000円</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
 		
 						<div class="notes fadein fade02">
 							<p>※価格は全て税抜き価格</p>
@@ -497,19 +431,37 @@
 							</div>
 						</div>
 		
-						<table class="fadein fade02">
-							<thead>
-								<tr>
-									<th>オプションメニュー</th>
-									<th >通常（1回）</th>
-							</thead>
-							<tbody>
-								<tr>
-									<td class="txt_l">美容液導入　FGF</td>
-									<td>3,000円</td>
-								</tr>
-							</tbody>
-						</table>
+						<div class="table_wrap fadein fade02">
+							<table>
+								<thead>
+									<tr>
+										<th>オプションメニュー</th>
+										<th>価格</th>
+								</thead>
+								<tbody>
+									<tr>
+										<td class="txt_l">美容液導入　FGF</td>
+										<td>3,000円</td>
+									</tr>
+									<tr>
+										<td class="txt_l">美容液導入　ヒアルロン酸</td>
+										<td>3,000円</td>
+									</tr>
+									<tr>
+										<td class="txt_l">美容液導入　ビタミンC</td>
+										<td>3,000円</td>
+									</tr>
+									<tr>
+										<td class="txt_l">美容液導入　<br class="is_tab">アテロコラーゲン&リンゴ幹細胞</td>
+										<td>3,800円</td>
+									</tr>
+									<tr>
+										<td class="txt_l">ブレインケア　20分</td>
+										<td>2,000円</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
 		
 						<div class="notes fadein fade02">
 							<p>※価格は全て税抜き価格</p>
@@ -533,7 +485,12 @@
 								</p>
 							</div>
 							<div class="img01 fadein fade02">
-								<img src="./images/menu_price/menu_price02_img09.jpg" alt="自宅ケア">
+								<picture>
+									<source media="(min-width: 768px)" srcset="./images/menu_price/menu_price02_img09.jpg">
+									<source media="(max-width: 767px)" srcset="./images/menu_price/menu_price02_img09_sp.jpg">
+
+									<img src="./images/menu_price/menu_price02_img09.jpg" alt="自宅ケア">
+								</picture>
 							</div>
 
 							<div class="txt02 fade_side_r fade_side01">
@@ -563,7 +520,7 @@
 				<div class="m_container">
 					<div class="box fadein fade01">
 						<div class="box_in">
-							<h2>結局、どのコースを選べばいいの？というあなたへ</h2>
+							<h2>結局、どのコースを選べばいいの？<br class="is_sp">というあなたへ</h2>
 							<p>
 								ご年齢やお肌の状態によっても、オススメするコースは違うのですが、当サロンの施術メニューのメインは、3D顔筋マシンを利用したボワールリフティングによるたるみ&しわ改善リフトアップです。<br>
 								一番簡単なリフトアップ メニューはLINEの友達追加で初回体験をご予約いただくと、8,000円でお試しいただけます。<br>
@@ -581,7 +538,8 @@
 						<div class="campaign_lower_in">
 							<div class="txt">
 								<div class="fig"><img src="./images/common/campaign_txt02.png" alt="52%OFF"></div>
-								<p>LINE予約で初回お試し<span class="large_txt">8,000</span><span class="medium_txt">円</span></p>
+								<p class="course">ボワールリフティング <br class="is_pc">表情筋トレーニングコース</p>
+								<p class="price">LINE予約で初回お試し<span class="large_txt">8,000</span><span class="medium_txt">円</span></p>
 							</div>
 							<div class="btn line">
 								<a href="#" target="_blank" rel="noopener">
@@ -613,7 +571,7 @@
 										<img src="./images/common/links_img02.png" alt="ボワールリフティングとは">
 									</div>
 									<div class="txt">
-										<p>ボワールリフティング<br>とは</p>
+										<p>ボワールリフティング<br class="is_pc">とは</p>
 									</div>
 								</a>
 							</li>
@@ -805,6 +763,7 @@
 	<script type="text/javascript" src="./js/jquery.inview.min.js" defer></script>
 	<script src="./js/ofi.min.js" defer></script>
 	<script src="./js/picturefill.min.js" defer></script>
+	<script src="./js/fixed_midashi.js" defer></script>
 	<script type="text/javascript" src="./js/myscript.js" defer></script>
 	<!-- JS読み込み -->
 
