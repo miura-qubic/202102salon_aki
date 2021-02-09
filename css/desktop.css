@@ -1256,11 +1256,13 @@ footer .copyright p{
 }
 .lower_menu ul{
 	display: flex;
-	align-items: center;
 	justify-content: space-between;
 	margin-top: 2rem;
 }
 .lower_menu ul li{
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	border-left: solid 1px #CCCACC;
 }
 .lower_menu.menu_price ul li{ width: 20%; }
@@ -1570,7 +1572,7 @@ table th.recommend .icon p{
 //
 ///////////////////////////////////////////////////*/
 .treatment02{
-	padding: 5rem 0;
+	padding: 0 0 5rem;
 }
 .treatment02 .box01 h2{
 	font-size: 1.8rem;
@@ -1787,7 +1789,7 @@ table th.recommend .icon p{
 	width: 100%;
 	height: auto;
 }
-.treatment04 table{
+.treatment04 .table_wrap{
 	margin-top: 8rem;
 }
 .treatment04 .btn{

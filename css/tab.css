@@ -345,6 +345,18 @@ footer .box .txt .sns_wrap a{
 //            ▼ 下層共通 ▼
 //
 ///////////////////////////////////////////////////*/
+.lower_mv{
+	padding: 6rem 0 0;
+}
+.lower_mv .ttl_wrap{
+	margin-bottom: 3.5rem;
+}
+.lower_mv .ttl_wrap .txt01{
+	font-size: 1.1rem;
+}
+.lower_mv .ttl_wrap .ttl{
+	font-size: 5rem;
+}
 table th,
 table td{
 	font-size: 0.7rem;
