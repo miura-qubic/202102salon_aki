@@ -145,6 +145,12 @@ main{
 	letter-spacing: 0.05em;
 	margin-top: 0.5rem;
 }
+.sub_ttl{
+	font-size: 1.3rem;
+	color: var(--brown);
+	text-align: center;
+	margin-bottom: 1.5rem;
+}
 
 .btn{
 	position: relative;
@@ -1120,6 +1126,7 @@ footer .copyright p{
 .lower_menu ul li a{
 	padding: 0.75rem 0.25rem;
 	font-size: 0.75rem;
+	font-weight: bold;
 	line-height: 1;
 	letter-spacing: 0.05em;
 	color: var(--brown);
@@ -1412,12 +1419,6 @@ table th.recommend .icon p{
 .treatment02{
 	padding: 0 0 4rem;
 }
-.treatment02 .box01 h2{
-	font-size: 1.3rem;
-	color: var(--brown);
-	text-align: center;
-	margin-bottom: 1.5rem;
-}
 .treatment02 .box01 .item{
 	background: #F6F6F9;
 	padding: 2rem 1.5rem;
@@ -1513,10 +1514,7 @@ table th.recommend .icon p{
 .treatment03 .box{
 	margin-bottom: 3.5rem;
 }
-.treatment03 .box h2{
-	font-size: 1.3rem;
-	color: var(--brown);
-	text-align: center;
+.treatment03 .box .sub_ttl{
 	margin-bottom: 2rem;
 }
 .treatment03 .box .item{
@@ -1569,10 +1567,7 @@ table th.recommend .icon p{
 	position: relative;
 	z-index: 2;
 }
-.treatment04 .box h2{
-	font-size: 1.3rem;
-	color: var(--brown);
-	text-align: center;
+.treatment04 .box .sub_ttl{
 	margin-bottom: 2.75rem;
 }
 .treatment04 .box .item{
@@ -1645,10 +1640,8 @@ table th.recommend .icon p{
 	width: 100%;
 	margin: 0 auto;
 }
-.treatment05 .box_in h2{
+.treatment05 .box_in .sub_ttl{
 	font-size: 1.1rem;
-	color: var(--brown);
-	text-align: center;
 	margin-bottom: 1rem;
 }
 .treatment05 .box_in p{

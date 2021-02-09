@@ -201,7 +201,7 @@ footer .box .txt .sns_wrap a{
 }
 .top04 .box_in .txt{
 	margin: 3rem 0 0 auto;
-	padding-left: 1rem;
+	/* padding-left: 2rem; */
 }
 .top04 .box_in .txt p{
 	font-size: 1.1rem;
