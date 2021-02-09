@@ -1293,25 +1293,29 @@ table td.txt_l{
 	font-size: 0.9rem;
 }
 
-.menu_price02#contents01 .table_wrap table{
+.menu_price02#contents01 .table_wrap table,
+.treatment04 .table_wrap table{
 	width: 1080px;
 }
 .menu_price02#contents02 .table_wrap table{
 	width: 880px;
 }
 .menu_price02#contents01 .table_wrap table th:first-child,
-.menu_price02#contents02 .table_wrap table th:first-child{
+.menu_price02#contents02 .table_wrap table th:first-child,
+.treatment04 .table_wrap table th:first-child{
 	border-right: solid 2px #707070;
 	white-space: nowrap;
 }
-.menu_price02#contents01 .table_wrap table th:first-child{
+.menu_price02#contents01 .table_wrap table th:first-child,
+.treatment04 .table_wrap table th:first-child{
 	width: 6.5rem;
 }
 .menu_price02#contents02 .table_wrap table th:first-child{
 	width: 5rem;
 }
 .menu_price02#contents01 .table_wrap table tbody td,
-.menu_price02#contents02 .table_wrap table tbody td{
+.menu_price02#contents02 .table_wrap table tbody td,
+.treatment04 .table_wrap table tbody td{
 	width: 4.5rem;
 }
 .menu_price02#contents03 table th{

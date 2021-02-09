@@ -55,7 +55,7 @@ $(function () {
 			setTimeout(function(){
 					var target = $(urlHash);
 					var position = target.offset().top - headerHeight;
-					$('body,html').stop().animate({scrollTop:position}, 500);
+					$('body,html').stop().animate({scrollTop:position}, 1000);
 			}, 100);
 	}
 	$('a[href^="#"]').click(function () {

@@ -430,3 +430,47 @@ table td.recommend .icon p{
 .menu_price03 .box_in p{
 	font-size: 1rem;
 }
+/*///////////////////////////////////////////////////
+//
+//            ▼ treatment03 ▼
+//
+///////////////////////////////////////////////////*/
+.treatment03 .box .item .txt p{
+	font-size: 1rem;
+}
+.treatment03 .box .item .txt p.notes{
+	font-size: 0.875rem;
+	margin-top: 1.5rem;
+}
+.treatment03 .box .item .txt .btn{
+	margin: 2.5rem 0 0;
+}
+/*///////////////////////////////////////////////////
+//
+//            ▼ treatment04 ▼
+//
+///////////////////////////////////////////////////*/
+.treatment04 .box .item .txt{
+	width: 40%;
+}
+.treatment04 .box .item:nth-of-type(odd) .txt{
+	padding-left: 3rem;
+}
+.treatment04 .box .item:nth-of-type(even) .txt{
+	padding-right: 3rem;
+}
+.treatment04 .box .item .txt h3{
+	font-size: 1.4rem;
+	margin-bottom: 1.25rem;
+}
+.treatment04 .box .item .txt h3 .num{
+	top: -5rem;
+	left: -1.75rem;
+	font-size: 6.25rem;
+}
+.treatment04 .box .item .txt p{
+	font-size: 1rem;
+}
+.treatment04 .box .item .img{
+	width: 60%;
+}
