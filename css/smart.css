@@ -403,13 +403,13 @@ footer .box .txt .sns_wrap a:last-of-type{
 footer .box .r_box{
 	width: 100%;
 }
-footer .gmap{
+.gmap{
 	height: 0;
 	overflow: hidden;
 	padding-bottom: 75%;
 	position: relative;
 }
-footer .gmap iframe{
+.gmap iframe{
 	position: absolute;
 	left: 0;
 	top: 0;
@@ -463,7 +463,7 @@ footer .copyright p{
 	margin-bottom: 1.5rem;
 }
 .top01 .mv .txt p{
-	font-size: 1.2rem;
+	font-size: 1.15rem;
 	font-weight: bold;
 	letter-spacing: 0.05em;
 }
@@ -1110,8 +1110,11 @@ footer .copyright p{
 	border: solid 1px #CCCACC;
 	border-radius: 1.25rem;
 }
-.lower_menu.menu_price ul li{ width: 32%; }
-.lower_menu.treatment ul li{ width: 49%; }
+.lower_menu.menu_price ul li,
+.lower_menu.about ul li
+{ width: 32%; }
+.lower_menu.treatment ul li,
+.lower_menu.voirlifting ul li{ width: 49%; }
 .lower_menu.menu_price ul li:nth-of-type(-n+3){
 	margin-top: 0;
 }
@@ -1144,29 +1147,29 @@ footer .copyright p{
 	border: solid 1px #707070;
 	margin-top: 2rem;
 }
-.table_wrap table{
+.table_wrap .table{
 	width: 100%;
 }
-table th,
-table td{
+.table th,
+.table td{
 	font-size: 0.75rem;
 	line-height: 1.5;
 	border: solid 1px #707070;
 	padding: 0.75rem 0.5rem;
 }
-table thead th{
+.table thead th{
 	background: #C4E3CC;
 }
-table tbody th,
-table tbody td{
+.table tbody th,
+.table tbody td{
 	font-weight: normal;
 	text-align: center;
 	background: #fff;
 }
-table td.price{
+.table td.price{
 	text-align: right;
 }
-table td.txt_l{
+.table td.txt_l{
 	text-align: left;
 }
 
@@ -1311,40 +1314,40 @@ table td.txt_l{
 	font-size: 0.9rem;
 }
 
-.menu_price02#contents01 .table_wrap table,
-.treatment04 .table_wrap table{
+.menu_price02#contents01 .table_wrap .table,
+.treatment04 .table_wrap .table{
 	width: 1080px;
 }
-.menu_price02#contents02 .table_wrap table{
+.menu_price02#contents02 .table_wrap .table{
 	width: 880px;
 }
-.menu_price02#contents01 .table_wrap table th:first-child,
-.menu_price02#contents02 .table_wrap table th:first-child,
-.treatment04 .table_wrap table th:first-child{
+.menu_price02#contents01 .table_wrap .table th:first-child,
+.menu_price02#contents02 .table_wrap .table th:first-child,
+.treatment04 .table_wrap .table th:first-child{
 	border-right: solid 2px #707070;
 	white-space: nowrap;
 }
-.menu_price02#contents01 .table_wrap table th:first-child,
-.treatment04 .table_wrap table th:first-child{
+.menu_price02#contents01 .table_wrap .table th:first-child,
+.treatment04 .table_wrap .table th:first-child{
 	width: 6.5rem;
 }
-.menu_price02#contents02 .table_wrap table th:first-child{
+.menu_price02#contents02 .table_wrap .table th:first-child{
 	width: 5rem;
 }
-.menu_price02#contents01 .table_wrap table tbody td,
-.menu_price02#contents02 .table_wrap table tbody td,
-.treatment04 .table_wrap table tbody td{
+.menu_price02#contents01 .table_wrap .table tbody td,
+.menu_price02#contents02 .table_wrap .table tbody td,
+.treatment04 .table_wrap .table tbody td{
 	width: 4.5rem;
 }
-.menu_price02#contents03 table th{
+.menu_price02#contents03 .table th{
 	width: 50%;
 }
-table th.recommend{
+.table th.recommend{
 	position: relative;
 	background: #ddd6cc;
 	border: solid 3px #707070;
 }
-table th.recommend .icon{
+.table th.recommend .icon{
 	position: absolute;
 	top: -0.75rem;
 	left: 0;
@@ -1358,11 +1361,11 @@ table th.recommend .icon{
 	justify-content: center;
 	transform: rotate(-15deg);
 }
-table th.recommend .icon.icon02{
+.table th.recommend .icon.icon02{
 	width: 4.75rem;
 	height: 2.6rem;
 }
-table th.recommend .icon p{
+.table th.recommend .icon p{
 	color: #fff;
 	font-size: 0.6rem;
 	line-height: 1.2;
@@ -1678,17 +1681,6 @@ table th.recommend .icon p{
 	position: relative;
 	z-index: 2;
 }
-.voirlifting02 .box .item,
-.voirlifting03 .box .item{
-	display: flex;
-	flex-direction: column;
-	align-items: flex-start;
-	justify-content: flex-start;
-}
-.voirlifting02 .box .item .img,
-.voirlifting03 .box .item .img{
-	order: 1;
-}
 .voirlifting02 .box .item .img img,
 .voirlifting03 .box .item .img img{
 	width: 100%;
@@ -1861,6 +1853,156 @@ table th.recommend .icon p{
 	display: inline;
 	text-decoration: underline;
 	color: var(--emegreen);
+}
+/*///////////////////////////////////////////////////
+//
+//            ▼ about02 ▼
+//
+///////////////////////////////////////////////////*/
+.about02{
+	padding: 0 0 4rem;
+}
+.about02 .box .fade_side_r,
+.about02 .box .fade_side_l{
+	transform: translateY(50px);
+}
+.about02 .box .fade_side_r.active,
+.about02 .box .fade_side_l.active{
+	transform: translateY(0);
+}
+.about02 .box .img img{
+	width: 100%;
+	height: auto;
+}
+.about02 .box .txt{
+	margin-top: 1.5rem;
+}
+.about02 .box .txt h3{
+	font-size: 1.3rem;
+	margin-bottom: 1.5rem;
+	text-align: center;
+}
+.about02 .box .txt p{
+	font-size: 0.9rem;
+	line-height: 2.4;
+}
+.about02 .box .txt .is_sp02{
+	display: block;
+}
+/*///////////////////////////////////////////////////
+//
+//            ▼ about03 ▼
+//
+///////////////////////////////////////////////////*/
+.about03{
+	padding: 3rem 0 4rem;
+	background: rgba(229,242,232,.4);
+}
+.about03::before{
+	position: absolute;
+	content: '';
+	bottom: 0;
+	right: 0;
+	width: 100%;
+	height: 20rem;
+	background: url(../images/common/fig.png) right bottom / 100% auto no-repeat;
+}
+.about03 .box{
+	position: relative;
+	z-index: 2;
+}
+.about03 .box .fade_side_l,
+.about03 .box .fade_side_r{
+	transform: translateY(50px);
+}
+.about03 .box .fade_side_l.active,
+.about03 .box .fade_side_r.active{
+	transform: translateY(0);
+}
+.about03 .box .item .img img{
+	width: 100%;
+	height: auto;
+}
+.about03 .box .item .txt{
+	margin-top: 1.5rem;
+}
+.about03 .box .item .txt h3{
+	font-size: 1.3rem;
+	line-height: 1.5;
+	color: var(--brown);
+	text-align: center;
+	margin-bottom: 1.5rem;
+}
+.about03 .box .item .txt h4{
+	font-size: 1rem;
+	text-align: center;
+	margin-bottom: 1.25rem;
+}
+.about03 .box .item .txt p{
+	font-size: 0.9rem;
+	line-height: 2.4;
+}
+.about03 .box .txt .is_sp02{
+	display: block;
+}
+/*///////////////////////////////////////////////////
+//
+//            ▼ about04 ▼
+//
+///////////////////////////////////////////////////*/
+.about04{
+	padding: 3rem 0;
+}
+.about04 .box{
+	position: relative;
+	background: rgba(196,227,204,.3);
+	padding: 5rem 1.5rem;
+}
+.about04 table{
+	width: 100%;
+}
+.about04 table th,
+.about04 table td{
+	font-size: 0.9rem;
+	line-height: 1.5;
+	display: block;
+	text-align: left;
+	padding: 0.3rem 0;
+}
+.about04 table th{
+	color: var(--green03);
+	border-bottom: solid 1px #707070;
+}
+.about04 table td{
+	margin-bottom: 1.25rem;
+}
+.about04 table td a{
+	display: inline;
+	text-decoration: underline;
+	color: var(--emegreen);
+}
+.about04 table td a span{
+	margin-left: 0.25rem;
+}
+.about04 table td .gmap{
+	margin-top: 1rem;
+}
+
+.about04 .box .fig{
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 8rem;
+}
+.about04 .box .fig01{
+	top: 1.5rem;
+}
+.about04 .box .fig02{
+	bottom: 1.5rem;
+}
+.about04 .box .fig img{
+	width: 100%;
+	height: auto;
 }
 /*///////////////////////////////////////////////////
 //
