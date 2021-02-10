@@ -66,7 +66,12 @@ $(function () {
 		var position = target.offset().top;
 		$("html, body").animate({ scrollTop: position - header }, speed, "swing");
 		return false;
-	}); 
+	});
+
+	$('.voirlifting05 .que').on('click',function(){
+		$(this).toggleClass('active');
+		$(this).next('.ans').slideToggle(700);
+	});
 
 	// 一番最後に記述
 	$("body").removeClass("preload");

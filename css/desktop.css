@@ -1833,7 +1833,7 @@ table th.recommend .icon p{
 //
 ///////////////////////////////////////////////////*/
 .voirlifting02{
-	padding: 5rem 0;
+	padding: 6rem 0;
 	background: rgba(229,242,232,.4);
 }
 .voirlifting02::before{
@@ -1849,34 +1849,195 @@ table th.recommend .icon p{
 	position: relative;
 	z-index: 2;
 }
-.voirlifting02 .box .item{
+.voirlifting02 .box .item,
+.voirlifting03 .box .item{
 	display: flex;
-	align-items: center;
+	align-items: flex-start;
 	justify-content: space-between;
 }
 .voirlifting02 .box .item .txt{
 	width: 40%;
 	padding-right: 5%;
 }
-.voirlifting02 .box .item .txt .inner{
+.voirlifting02 .box .item .txt .inner,
+.voirlifting03 .box .item .txt .inner{
 	margin-top: 4rem;
 }
-.voirlifting02 .box .item .txt .inner:first-of-type{
+.voirlifting02 .box .item .txt .inner:first-of-type,
+.voirlifting03 .box .item .txt .inner:first-of-type{
 	margin-top: 0;
 }
-.voirlifting02 .box .item .txt .inner h3{
+.voirlifting02 .box .item .txt .inner h3,
+.voirlifting03 .box .item .txt .inner h3{
 	font-size: 1.5rem;
 	margin-bottom: 1rem;
 }
-.voirlifting02 .box .item .txt .inner p{
+.voirlifting02 .box .item .txt .inner p,
+.voirlifting03 .box .item .txt .inner p{
 	font-size: 1.1rem;
 }
-.voirlifting02 .box .item .img{
+.voirlifting02 .box .item .img,
+.voirlifting03 .box .item .img{
 	width: 60%;
 }
-.voirlifting02 .box .item .img img{
+.voirlifting02 .box .item .img img,
+.voirlifting03 .box .item .img img{
 	width: 100%;
 	height: auto;
+}
+/*///////////////////////////////////////////////////
+//
+//            ▼ voirlifting03 ▼
+//
+///////////////////////////////////////////////////*/
+.voirlifting03{
+	padding: 6rem 0;
+}
+.voirlifting03 .box .item .txt{
+	width: 40%;
+	padding-left: 5%;
+}
+/*///////////////////////////////////////////////////
+//
+//            ▼ voirlifting04 ▼
+//
+///////////////////////////////////////////////////*/
+.voirlifting04{
+	padding: 6rem 0;
+	background: rgba(229,242,232,.4);
+}
+.voirlifting04::before{
+	position: absolute;
+	content: '';
+	bottom: 0;
+	right: 0;
+	width: 100%;
+	height: 40rem;
+	background: url(../images/common/fig.png) right bottom / 100% auto no-repeat;
+}
+.voirlifting04 .box{
+	position: relative;
+	z-index: 2;
+}
+.voirlifting04 .box .box_in{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.voirlifting04 .box .item{
+	width: 47%;
+	margin-top: 4rem;
+}
+.voirlifting04 .box .item:nth-of-type(-n+2){
+	margin-top: 0;
+}
+.voirlifting04 .box .item .img_wrap{
+	display: flex;
+}
+.voirlifting04 .box .item .img_wrap .img{
+	position: relative;
+	width: 50%;
+}
+.voirlifting04 .box .item .img_wrap .img::before{
+	position: absolute;
+	top: 0.75rem;
+	left: 0.75rem;
+	font-size: 1.25rem;
+	font-weight: bold;
+	line-height: 1;
+	color: var(--brown);
+}
+.voirlifting04 .box .item .img_wrap .img.before::before{
+	content: 'Before';
+}
+.voirlifting04 .box .item .img_wrap .img.after::before{
+	content: 'After';
+}
+.voirlifting04 .box .item .img_wrap .img img{
+	width: 100%;
+	height: auto;
+}
+.voirlifting04 .box .item .txt{
+	margin-top: 1rem;
+}
+.voirlifting04 .box .item .txt h3{
+	font-size: 1.25rem;
+	color: var(--brown);
+}
+/*///////////////////////////////////////////////////
+//
+//            ▼ voirlifting05 ▼
+//
+///////////////////////////////////////////////////*/
+.voirlifting05{
+	padding: 6rem 0 12rem;
+}
+.voirlifting05 dl{
+	border: solid 1px #E5E1E1;
+	border-radius: 20px;
+	margin-top: 2rem;
+}
+.voirlifting05 dl:first-of-type{
+	margin-top: 0;
+}
+.voirlifting05 dl .que,
+.voirlifting05 dl .ans{
+	position: relative;
+	padding: 1rem 2rem 1rem 7rem;
+}
+.voirlifting05 dl .que{
+	font-size: 1.25rem;
+	font-weight: bold;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	cursor: pointer;
+}
+.voirlifting05 dl .ans{
+	display: none;
+	border-top: solid 1px #E5E1E1;
+}
+.voirlifting05 dl .que::before,
+.voirlifting05 dl .ans::before{
+	position: absolute;
+	top: 0.5rem;
+	left: 2rem;
+	font-size: 1.125rem;
+	font-weight: bold;
+	font-family: 'Roboto', sans-serif;
+	border: solid 1px var(--brown);
+	border-radius: 50%;
+	width: 3.125rem;
+	height: 3.125rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.voirlifting05 dl .que::before{
+	content: 'Q';
+	color: var(--brown);
+}
+.voirlifting05 dl .ans::before{
+	content: 'A';
+	color: #fff;
+	background: var(--brown);
+}
+.voirlifting05 dl .que span{
+	color: var(--brown);
+	font-size: 2rem;
+	line-height: 1;
+	transition: .7s;
+}
+.voirlifting05 dl .que.active span{
+	transform: rotate(-180deg);
+}
+.voirlifting05 dl .ans a{
+	display: inline;
+	text-decoration: underline;
+	transition: .7s;
+}
+.voirlifting05 dl .ans a:hover{
+	color: var(--emegreen);
 }
 /*///////////////////////////////////////////////////
 //

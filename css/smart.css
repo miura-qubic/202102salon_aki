@@ -1658,6 +1658,212 @@ table th.recommend .icon p{
 }
 /*///////////////////////////////////////////////////
 //
+//            ▼ voirlifting02 ▼
+//
+///////////////////////////////////////////////////*/
+.voirlifting02{
+	padding: 3rem 0 4rem;
+	background: rgba(229,242,232,.4);
+}
+.voirlifting02::before{
+	position: absolute;
+	content: '';
+	bottom: 0;
+	right: 0;
+	width: 100%;
+	height: 20rem;
+	background: url(../images/common/fig.png) right bottom / 100% auto no-repeat;
+}
+.voirlifting02 .box{
+	position: relative;
+	z-index: 2;
+}
+.voirlifting02 .box .item,
+.voirlifting03 .box .item{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: flex-start;
+}
+.voirlifting02 .box .item .img,
+.voirlifting03 .box .item .img{
+	order: 1;
+}
+.voirlifting02 .box .item .img img,
+.voirlifting03 .box .item .img img{
+	width: 100%;
+	height: auto;
+}
+.voirlifting02 .box .item .txt,
+.voirlifting03 .box .item .txt{
+	order: 2;
+	margin-top: 1.75rem;
+}
+.voirlifting02 .box .item .txt .inner,
+.voirlifting03 .box .item .txt .inner{
+	margin-top: 2.5rem;
+}
+.voirlifting02 .box .item .txt .inner:first-of-type,
+.voirlifting03 .box .item .txt .inner:first-of-type{
+	margin-top: 0;
+}
+.voirlifting02 .box .item .txt .inner h3,
+.voirlifting03 .box .item .txt .inner h3{
+	font-size: 1.1rem;
+	margin-bottom: 1rem;
+}
+.voirlifting02 .box .item .txt .inner p,
+.voirlifting03 .box .item .txt .inner p{
+	font-size: 0.9rem;
+}
+/*///////////////////////////////////////////////////
+//
+//            ▼ voirlifting03 ▼
+//
+///////////////////////////////////////////////////*/
+.voirlifting03{
+	padding: 3rem 0 4rem;
+}
+/*///////////////////////////////////////////////////
+//
+//            ▼ voirlifting04 ▼
+//
+///////////////////////////////////////////////////*/
+.voirlifting04{
+	padding: 3rem 0 4rem;
+	background: rgba(229,242,232,.4);
+}
+.voirlifting04::before{
+	position: absolute;
+	content: '';
+	bottom: 0;
+	right: 0;
+	width: 100%;
+	height: 20rem;
+	background: url(../images/common/fig.png) right bottom / 100% auto no-repeat;
+}
+.voirlifting04 .box{
+	position: relative;
+	z-index: 2;
+}
+.voirlifting04 .box .item{
+	margin-top: 2.75rem;
+}
+.voirlifting04 .box .item:first-of-type{
+	margin-top: 0;
+}
+.voirlifting04 .box .item .img_wrap{
+	display: flex;
+}
+.voirlifting04 .box .item .img_wrap .img{
+	position: relative;
+	width: 50%;
+}
+.voirlifting04 .box .item .img_wrap .img::before{
+	position: absolute;
+	top: 0.5rem;
+	left: 0.5rem;
+	font-size: 1rem;
+	font-weight: bold;
+	line-height: 1;
+	color: var(--brown);
+}
+.voirlifting04 .box .item .img_wrap .img.before::before{
+	content: 'Before';
+}
+.voirlifting04 .box .item .img_wrap .img.after::before{
+	content: 'After';
+}
+.voirlifting04 .box .item .img_wrap .img img{
+	width: 100%;
+	height: auto;
+}
+.voirlifting04 .box .item .txt{
+	margin-top: 0.75rem;
+}
+.voirlifting04 .box .item .txt h3{
+	font-size: 1.1rem;
+	color: var(--brown);
+}
+.voirlifting04 .box .item .txt p{
+	font-size: 0.9rem;
+}
+/*///////////////////////////////////////////////////
+//
+//            ▼ voirlifting05 ▼
+//
+///////////////////////////////////////////////////*/
+.voirlifting05{
+	padding: 3rem 0 6rem;
+}
+.voirlifting05 dl{
+	border: solid 1px #E5E1E1;
+	border-radius: 10px;
+	margin-top: 1.5rem;
+}
+.voirlifting05 dl:first-of-type{
+	margin-top: 0;
+}
+.voirlifting05 dl .que,
+.voirlifting05 dl .ans{
+	position: relative;
+	padding: 0.75rem 1rem 0.75rem 4.5rem;
+}
+.voirlifting05 dl .que{
+	font-size: 1rem;
+	font-weight: bold;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	cursor: pointer;
+}
+.voirlifting05 dl .ans{
+	display: none;
+	border-top: solid 1px #E5E1E1;
+	font-size: 0.875rem;
+}
+.voirlifting05 dl .que::before,
+.voirlifting05 dl .ans::before{
+	position: absolute;
+	top: 0.6rem;
+	left: 1rem;
+	font-size: 1rem;
+	font-weight: bold;
+	font-family: 'Roboto', sans-serif;
+	border: solid 1px var(--brown);
+	border-radius: 50%;
+	width: 2.5rem;
+	height: 2.5rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.voirlifting05 dl .que::before{
+	content: 'Q';
+	color: var(--brown);
+}
+.voirlifting05 dl .ans::before{
+	content: 'A';
+	color: #fff;
+	background: var(--brown);
+}
+.voirlifting05 dl .que span{
+	color: var(--brown);
+	font-size: 1.5rem;
+	line-height: 1;
+	margin-left: 0.75rem;
+	transition: .7s;
+}
+.voirlifting05 dl .que.active span{
+	transform: rotate(-180deg);
+}
+.voirlifting05 dl .ans a{
+	display: inline;
+	text-decoration: underline;
+	color: var(--emegreen);
+}
+/*///////////////////////////////////////////////////
+//
 //            ▼ IE対策 ▼
 //
 ///////////////////////////////////////////////////*/
