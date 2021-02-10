@@ -1849,15 +1849,15 @@ table th.recommend .icon p{
 	position: relative;
 	z-index: 2;
 }
-.voirlifting02 .box .item,
-.voirlifting03 .box .item{
-	display: flex;
-	align-items: flex-start;
-	justify-content: space-between;
+.voirlifting02 .box .item::after,
+.voirlifting03 .box .item::after{
+	content: '';
+	display: table;
+	clear: both;
 }
-.voirlifting02 .box .item .txt{
-	width: 40%;
-	padding-right: 5%;
+.voirlifting02 .box .item .txt,
+.voirlifting03 .box .item .txt{
+	width: 100%;
 }
 .voirlifting02 .box .item .txt .inner,
 .voirlifting03 .box .item .txt .inner{
@@ -1880,6 +1880,10 @@ table th.recommend .icon p{
 .voirlifting03 .box .item .img{
 	width: 60%;
 }
+.voirlifting02 .box .item .img{
+	float: right;
+	margin: 0 0 2rem 5%;
+}
 .voirlifting02 .box .item .img img,
 .voirlifting03 .box .item .img img{
 	width: 100%;
@@ -1893,9 +1897,9 @@ table th.recommend .icon p{
 .voirlifting03{
 	padding: 6rem 0;
 }
-.voirlifting03 .box .item .txt{
-	width: 40%;
-	padding-left: 5%;
+.voirlifting03 .box .item .img{
+	float: left;
+	margin: 0 5% 2rem 0;
 }
 /*///////////////////////////////////////////////////
 //

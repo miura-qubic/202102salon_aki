@@ -486,3 +486,36 @@ table td.recommend .icon p{
 .treatment04 .box .item .img{
 	width: 60%;
 }
+/*///////////////////////////////////////////////////
+//
+//            ▼ voirlifting02 ▼
+//
+///////////////////////////////////////////////////*/
+.voirlifting02 .box .item .img,
+.voirlifting03 .box .item .img{
+	width: 52%;
+}
+.voirlifting02 .box .item .img{
+	margin: 0 0 1.5rem 5%;
+}
+.voirlifting02 .box .item .txt .inner,
+.voirlifting03 .box .item .txt .inner{
+	margin-top: 3rem;
+}
+.voirlifting02 .box .item .txt .inner:nth-of-type(2),
+.voirlifting03 .box .item .txt .inner:nth-of-type(2){
+	clear: both;
+}
+.voirlifting02 .box .item .txt .inner h3,
+.voirlifting03 .box .item .txt .inner h3{
+	font-size: 1.3rem;
+	margin-bottom: 1rem;
+}
+/*///////////////////////////////////////////////////
+//
+//            ▼ voirlifting03 ▼
+//
+///////////////////////////////////////////////////*/
+.voirlifting03 .box .item .img{
+	margin: 0 5% 1.5rem 0;
+}
