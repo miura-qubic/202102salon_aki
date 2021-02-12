@@ -2201,6 +2201,213 @@ footer .copyright p{
 }
 /*///////////////////////////////////////////////////
 //
+//            ▼ blog02 ▼
+//
+///////////////////////////////////////////////////*/
+.post_wrap{
+	padding: 8rem 0 12rem;
+}
+.post_wrap .post_wrap_in{
+	display: flex;
+	justify-content: space-between;
+}
+.post_wrap .main_contents{
+	width: 75%;
+}
+.post_wrap .main_contents_in{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.post_wrap .main_contents article{
+	width: 50%;
+	margin-top: 3.5rem;
+}
+.post_wrap .main_contents article:nth-of-type(-n+2){
+	margin-top: 0;
+}
+.post_wrap .main_contents article a{
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.post_wrap .main_contents article a::before{
+	position: absolute;
+	content: '';
+	top: 0;
+	left: 0;
+	width: 0;
+	height: 100%;
+	background: rgba(229,242,232,.4);
+	transition: .7s cubic-bezier(.79,.01,.21,.96);
+}
+.post_wrap .main_contents article a:hover::before{
+	width: 100%;
+}
+.post_wrap .main_contents article a .img{
+	position: relative;
+	width: 34%;
+	z-index: 2;
+	overflow: hidden;
+}
+.post_wrap .main_contents article a .img img{
+	width: 100%;
+	height: auto;
+	transition: .7s cubic-bezier(.79,.01,.21,.96) .1s;
+}
+.post_wrap .main_contents article a:hover .img img{
+	transform: scale(1.05);
+}
+.post_wrap .main_contents article a .txt{
+	position: relative;
+	width: 66%;
+	padding: 0 1.5rem;
+	z-index: 2;
+}
+.post_wrap .main_contents article a .txt h2{
+	font-size: 1.125rem;
+	color: var(--brown);
+	-webkit-line-clamp: 1;
+	margin-bottom: 0.75rem;
+}
+.post_wrap .main_contents article a .txt p{
+	color: #555;
+	line-height: 1.8;
+}
+.post_wrap .main_contents article a .txt time{
+	display: inline-block;
+	font-size: 0.875rem;
+	color: #555;
+	margin-top: 0.75rem;
+}
+
+.post_wrap .pagenaition{
+	margin-top: 6rem;
+}
+.post_wrap .pagenaition ul{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.post_wrap .pagenaition ul li{
+	margin-right: 1.5rem;
+}
+.post_wrap .pagenaition ul li:last-of-type{
+	margin-right: 0;
+}
+.post_wrap .pagenaition ul li.active span,
+.post_wrap .pagenaition ul li a{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 2.75rem;
+	height: 2.75rem;
+}
+.post_wrap .pagenaition ul li.active span{
+	color: #fff;
+	background: var(--green03);
+}
+.post_wrap .pagenaition ul li a{
+	background: var(--green02);
+	transition: 1s;
+}
+.post_wrap .pagenaition ul li a:hover{
+	background: var(--green01);
+}
+
+.post_wrap aside{
+	width: 25%;
+	padding-left: 3%;
+}
+.post_wrap aside h3{
+	font-size: 1.25rem;
+	color: var(--brown);
+	border-bottom: solid 1px var(--brown);
+	margin-bottom: 1rem;
+}
+.post_wrap aside .box article{
+	margin-top: 1rem;
+}
+.post_wrap aside .box article:first-of-type{
+	margin-top: 0;
+}
+.post_wrap aside .box article a{
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.post_wrap aside .box article a::before{
+	position: absolute;
+	content: '';
+	top: 0;
+	left: 0;
+	width: 0;
+	height: 100%;
+	background: rgba(229,242,232,.4);
+	transition: .7s cubic-bezier(.79,.01,.21,.96);
+}
+.post_wrap aside .box article a:hover::before{
+	width: 100%;
+}
+.post_wrap aside .box article a .img{
+	position: relative;
+	width: 30%;
+	z-index: 2;
+	overflow: hidden;
+}
+.post_wrap aside .box article a .img img{
+	width: 100%;
+	height: auto;
+	transition: .7s cubic-bezier(.79,.01,.21,.96) .1s;
+}
+.post_wrap aside .box article a:hover .img img{
+	transform: scale(1.05);
+}
+.post_wrap aside .box article a .txt{
+	position: relative;
+	width: 70%;
+	padding: 0 1rem;
+	z-index: 2;
+}
+.post_wrap aside .box article a .txt h4{
+	font-size: 0.875rem;
+	color: var(--brown);
+	-webkit-line-clamp: 1;
+}
+.post_wrap aside .box article a .txt p{
+	font-size: 0.75rem;
+}
+.post_wrap aside .box article a .txt h5{
+	font-size: 0.75rem;
+	color: var(--brown);
+	-webkit-line-clamp: 1;
+	margin-top: 0.5rem;
+}
+.post_wrap aside .box02,
+.post_wrap aside .box03{
+	margin-top: 3rem;
+}
+.post_wrap aside .box02 article a .txt p{
+	color: #555;
+	-webkit-line-clamp: 1;
+}
+.post_wrap aside .box02 article a .txt time{
+	display: inline-block;
+	font-size: 0.75rem;
+	color: #555;
+	margin-top: 0.5rem;
+}
+.post_wrap aside .box03 .links a{
+	width: 135px;
+	transition: .7s;
+}
+.post_wrap aside .box03 .links a:hover{
+	opacity: .7;
+}
+/*///////////////////////////////////////////////////
+//
 //            ▼ IE対策 ▼
 //
 ///////////////////////////////////////////////////*/
