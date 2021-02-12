@@ -2400,11 +2400,33 @@ footer .copyright p{
 	margin-top: 0.5rem;
 }
 .post_wrap aside .box03 .links a{
-	width: 135px;
-	transition: .7s;
+	position: relative;
+	width: 100%;
+	text-align: center;
+	padding: 0.5rem;
+	color: var(--emegreen);
+	border: solid 1px var(--emegreen);
+	transition: 1s cubic-bezier(.79,.01,.21,.96);
+}
+.post_wrap aside .box03 .links a::before{
+	position: absolute;
+	content: '';
+	top: 0;
+	left: 0;
+	width: 0;
+	height: 100%;
+	background: var(--emegreen);
+	transition: 1s cubic-bezier(.79,.01,.21,.96);
 }
 .post_wrap aside .box03 .links a:hover{
-	opacity: .7;
+	color: #fff;
+}
+.post_wrap aside .box03 .links a:hover::before{
+	width: 100%;
+}
+.post_wrap aside .box03 .links a span{
+	position: relative;
+	z-index: 2;
 }
 /*///////////////////////////////////////////////////
 //
