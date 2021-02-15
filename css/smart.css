@@ -1082,7 +1082,7 @@ footer .copyright p{
 	font-size: 0.65rem;
 }
 .lower_mv .ttl_wrap .ttl{
-	font-size: 2.4rem;
+	font-size: 2.3rem;
 }
 .lower_mv .mv{
 	margin: 0 -1.5rem;
@@ -1128,6 +1128,7 @@ footer .copyright p{
 }
 .lower_menu.menu_price ul li:nth-of-type(3n),
 .lower_menu.treatment ul li:nth-of-type(2n),
+.lower_menu.voirlifting ul li:nth-of-type(2n),
 .lower_menu ul li:last-of-type{
 	margin-right: 0;
 }
