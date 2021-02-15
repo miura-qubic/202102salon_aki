@@ -2201,7 +2201,7 @@ footer .copyright p{
 }
 /*///////////////////////////////////////////////////
 //
-//            ▼ blog02 ▼
+//            ▼ blog02、before_after02 ▼
 //
 ///////////////////////////////////////////////////*/
 .post_wrap{
@@ -2219,20 +2219,20 @@ footer .copyright p{
 	justify-content: space-between;
 	flex-wrap: wrap;
 }
-.post_wrap .main_contents article{
+.blog02 .main_contents article{
 	width: 50%;
 	margin-top: 3.5rem;
 }
-.post_wrap .main_contents article:nth-of-type(-n+2){
+.blog02 .main_contents article:nth-of-type(-n+2){
 	margin-top: 0;
 }
-.post_wrap .main_contents article a{
+.blog02 .main_contents article a{
 	position: relative;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
 }
-.post_wrap .main_contents article a::before{
+.blog02 .main_contents article a::before{
 	position: absolute;
 	content: '';
 	top: 0;
@@ -2242,44 +2242,116 @@ footer .copyright p{
 	background: rgba(229,242,232,.4);
 	transition: .7s cubic-bezier(.79,.01,.21,.96);
 }
-.post_wrap .main_contents article a:hover::before{
+.blog02 .main_contents article a:hover::before{
 	width: 100%;
 }
-.post_wrap .main_contents article a .img{
+.blog02 .main_contents article a .img{
 	position: relative;
 	width: 34%;
 	z-index: 2;
 	overflow: hidden;
 }
-.post_wrap .main_contents article a .img img{
+.blog02 .main_contents article a .img img{
 	width: 100%;
 	height: auto;
 	transition: .7s cubic-bezier(.79,.01,.21,.96) .1s;
 }
-.post_wrap .main_contents article a:hover .img img{
+.blog02 .main_contents article a:hover .img img{
 	transform: scale(1.05);
 }
-.post_wrap .main_contents article a .txt{
+.blog02 .main_contents article a .txt{
 	position: relative;
 	width: 66%;
 	padding: 0 1.5rem;
 	z-index: 2;
 }
-.post_wrap .main_contents article a .txt h2{
+.blog02 .main_contents article a .txt h2{
 	font-size: 1.125rem;
 	color: var(--brown);
 	-webkit-line-clamp: 1;
 	margin-bottom: 0.75rem;
 }
-.post_wrap .main_contents article a .txt p{
+.blog02 .main_contents article a .txt p{
 	color: #555;
 	line-height: 1.8;
 }
-.post_wrap .main_contents article a .txt time{
+.blog02 .main_contents article a .txt time{
 	display: inline-block;
 	font-size: 0.875rem;
 	color: #555;
 	margin-top: 0.75rem;
+}
+
+.before_after02 .main_contents article{
+	width: 48.75%;
+	background: #fff;
+	box-shadow: 0 2px 8px rgba(0,0,0,.15);
+	margin-top: 3.5rem;
+	transition: 1s;
+}
+.before_after02 .main_contents article:nth-of-type(-n+2){
+	margin-top: 0;
+}
+.before_after02 .main_contents article:hover{
+	box-shadow: 0 6px 30px rgba(132,153,137,.7);
+}
+.before_after02 .main_contents article a{
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1.25rem;
+}
+.before_after02 .main_contents article a::before{
+	position: absolute;
+	content: '';
+	top: 0;
+	left: 0;
+	width: 0;
+	height: 100%;
+	background: var(--green01);
+	transition: .5s;
+}
+.before_after02 .main_contents article a:hover::before{
+	width: 100%;
+}
+.before_after02 .main_contents article a .img{
+	position: relative;
+	min-width: 12rem;
+	width: 40%;
+	z-index: 2;
+	overflow: hidden;
+}
+.before_after02 .main_contents article a .img img{
+	width: 100%;
+	height: auto;
+	transition: 1s;
+}
+.before_after02 .main_contents article a:hover .img img{
+	transform: scale(1.05);
+}
+.before_after02 .main_contents article a .txt{
+	position: relative;
+	width: 60%;
+	padding-left: 1.25rem;
+	z-index: 2;
+}
+.before_after02 .main_contents article a .txt h2{
+	font-size: 1.25rem;
+	line-height: 1.5;
+	margin-bottom: 0.25rem;
+	color: var(--brown);
+}
+.before_after02 .main_contents article a .txt .inner{
+	margin-top: 3rem;
+}
+.before_after02 .main_contents article a .txt .inner h3{
+	font-size: 1rem;
+	color: var(--brown);
+	-webkit-line-clamp: 1;
+}
+.before_after02 .main_contents article a .txt .inner p{
+	color: #666;
 }
 
 .post_wrap .pagenaition{

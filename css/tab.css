@@ -550,7 +550,7 @@ footer .box .txt .sns_wrap a{
 }
 /*///////////////////////////////////////////////////
 //
-//            ▼ blog02 ▼
+//            ▼ blog02、before_after02 ▼
 //
 ///////////////////////////////////////////////////*/
 .post_wrap .main_contents{
@@ -570,16 +570,28 @@ footer .box .txt .sns_wrap a{
 .post_wrap .main_contents article:first-of-type{
 	margin-top: 0;
 }
-.post_wrap .main_contents article a .img{
+.blog02 .main_contents article a .img{
 	width: 32%;
 }
-.post_wrap .main_contents article a .txt{
+.blog02 .main_contents article a .txt{
 	width: 68%;
+}
+
+.before_after02 .main_contents article a .img{
+	position: relative;
+	min-width: 10rem;
+	width: 35%;
+}
+.before_after02 .main_contents article a .txt{
+	width: 65%;
+}
+.before_after02 .main_contents article a .txt .inner{
+	margin-top: 2rem;
 }
 
 .post_wrap aside{
 	width: 33%;
-	padding-left: 2.5%;
+	padding-left: 3.5%;
 }
 .post_wrap aside .box article a .img{
 	width: 33%;
